@@ -38,5 +38,6 @@
 #define WOLFBOOT_DTS_UPDATE_ADDRESS          
 #define WOLFBOOT_LOAD_ADDRESS                
 #define WOLFBOOT_LOAD_DTS_ADDRESS            
+#define WOLFBOOT_FIXED_PARTITIONS
 
 #endif /* !H_TARGETS_TARGET_ */

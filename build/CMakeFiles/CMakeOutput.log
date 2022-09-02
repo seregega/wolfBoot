@@ -1,0 +1,592 @@
+The system is: Windows - 10.0.22000 - AMD64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+0
+Microsoft (R) Build Engine версии 17.2.1+52cd2da31 для .NET Framework
+(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+Сборка начата 02.09.2022 23:00:06.
+Проект "C:\_Rabota\wolfBoot\build\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdC\CompilerIdC.vcxproj" в узле 1 (целевые объекты по умолчанию).
+PrepareForBuild:
+  Создание каталога "Debug\".
+  Создание каталога "Debug\CompilerIdC.tlog\".
+InitializeBuildStatus:
+  Создание "Debug\CompilerIdC.tlog\unsuccessfulbuild", так как было задано "AlwaysCreate".
+ClCompile:
+  C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.32.31326\bin\HostX86\x86\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc143.pdb" /external:W0 /Gd /TC /analyze- /FC /errorReport:queue CMakeCCompilerId.c
+  CMakeCCompilerId.c
+Link:
+  C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.32.31326\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdC.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCCompilerId.obj
+  CompilerIdC.vcxproj -> C:\_Rabota\wolfBoot\build\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdC\CompilerIdC.exe
+PostBuildEvent:
+  for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+  :VCEnd
+  CMAKE_C_COMPILER=C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.32.31326\bin\Hostx86\x86\cl.exe
+FinalizeBuildStatus:
+  Файл "Debug\CompilerIdC.tlog\unsuccessfulbuild" удаляется.
+  Обращение к "Debug\CompilerIdC.tlog\CompilerIdC.lastbuildstate".
+Сборка проекта "C:\_Rabota\wolfBoot\build\CMakeFiles\3.22.22040401-MSVC_2\CompilerIdC\CompilerIdC.vcxproj" завершена (целевые объекты по умолчанию).
+
+Сборка успешно завершена.
+    Предупреждений: 0
+    Ошибок: 0
+
+Прошло времени 00:00:00.92
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+
+The C compiler identification is MSVC, found in "C:/_Rabota/wolfBoot/build/CMakeFiles/3.22.22040401-MSVC_2/CompilerIdC/CompilerIdC.exe"
+
+Checking whether the ASM compiler is MSVC using "-?" matched "Microsoft":
+Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.32.31328 для x86
+(C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+
+                         ПАРАМЕТРЫ КОМПИЛЯТОРА C/C++
+
+
+                              -ОПТИМИЗАЦИЯ-
+
+Максимальная оптимизация /O1 (приоритет места)
+Максимальная оптимизация /O2 (приоритет скорости)
+/Ob<n> подстановка кода (по умолчанию n=0)
+/Od отключить оптимизации (по умолчанию)/Og включить глобальную оптимизацию
+/Oi[-] включить подставляемые функции   /Os предпочтительное пространство кода
+/Ot предпочтительная скорость кода      Оптимизация /Ox (приоритет скорости)
+/Oy[-] включить опускание указателя фрейма 
+/favor:<blend|ATOM> выбора процессора для оптимизации из списка:
+    blend - сочетание оптимизации для нескольких различных процессоров
+    ATOM - процессоры Intel(R) Atom(TM) 
+
+                             -ФОРМИРОВАНИЕ КОДА-
+
+/Gu[-] гарантирует, что у разных функций будут разные адреса
+/Gw[-] разделять глобальные переменные для компоновщика
+/GF включить объединение строк только для чтения
+/Gm[-] включить режим минимизации при построении
+/Gy[-] разделять функции для компоновщика
+/GS[-] включить проверку системы безопасности
+/GR[-] включить C++ RTTI                
+/GX[-] включить C++ EH (то же, что и /EHsc)
+/guard:cf[-] включает CFG (защита потока управления)
+/guard:ehcont[-]: включение метаданных продолжения EH (CET)
+/EHs включить C++ EH (без исключений SEH)
+/EHa включить C++ EH (с исключениями SEH)
+/EHc внешний C получает значение по умолчанию nothrow
+/EHr всегда создавать проверки завершения времени выполнения noexcept
+/fp:<contract|except[-]|fast|precise|strict> выбор модели с плавающей запятой:
+    сокращение - рассмотрите возможность использования сокращений с плавающей запятой при создании кода
+    except[-] - возможность использования исключений с плавающей запятой при создании кода
+    fast - "быстрая" (fast) модель с плавающей запятой; результаты менее предсказуемы
+    precise - "точная" (precise) модель с плавающей запятой; результаты предсказуемы
+    strict - "строгая" (strict) модель с плавающей запятой (выражает /fp:except)
+/Qfast_transcendentals создание встроенных макроопределений FP даже с /fp:except
+/ Qspectre[-] - включить исправления CVE 2017-5753
+/Qpar[-] - включение параллельного создания кода
+/Qpar-report:1 - диагностика автоматического параллелизатора; указание параллелизованных циклов
+/Qpar-report:2 - диагностика автоматического параллелизатора; указание непараллелизованных циклов
+/Qvec-report:1 - диагностика автоматического векторизатора; указание векторизированных циклов
+/Qvec-report:2 - диагностика автоматического векторизатора; указание невекторизованных циклов
+/GL[-] - включение создания кода во время компоновки
+/volatile:<iso|ms> - выбор непостоянной модели:
+    iso - семантика получения и освобождения не гарантируется при непостоянном обращении
+    ms - семантика получения и освобождения гарантируется при непостоянном обращении
+/GA оптимизировать для приложения Windows
+/Ge проверять стек для всех функций     
+/Gs[число] контролировать вызовы проверки стека
+/Gh включить вызов функции _penter      /GH включить вызов функции _pexit
+/GT создать безопасные относительно волокон доступы к локальному хранилищу потока (TLS)
+/RTC1 включить быструю проверку (/RTCsu)
+/RTCc преобразовать к сокращенной проверке типов
+/RTCs проверка кадров стека во время выполнения
+/RTCu неинициализированная проверка локального использования
+/clr[:параметр] компилировать для общеязыковой среды выполнения; здесь параметр - это:
+    pure: создать выходной файл только IL (без исполняемого машинного кода)
+    safe: создать проверяемый выходной файл только IL
+    netcore: создавать сборки, предназначенные для среды выполнения .NET Core
+    noAssembly: не создавать сборку     
+    nostdlib: игнорировать системный каталог .NET Framework при поиске сборок
+    nostdimport: не импортировать необходимые сборки неявным образом
+    initialAppDomain: включить исходное поведение AppDomain из Visual C++ 2002
+    implicitKeepAlive-: отключить неявный вывод System::GC::KeepAlive(this)
+/fsanitize=address Включить codegen для санитайзера адресов
+/Gd использовать соглашение о вызовах __cdecl 
+/Gr использовать соглашение о вызовах __fastcall
+/Gz использовать соглашение о вызовах __stdcall
+/GZ включить проверку стека (/RTCs)     
+/Gv использовать соглашение о вызовах __vectorcall
+/hotpatch обеспечить заполнение функции для образов с обновлениями
+/arch:<IA32|SSE|SSE2|AVX|AVX2|AVX512> минимальные требования к архитектуре ЦП; один из вариантов:
+    IA32 - использовать расширенные инструкции и x87 для операций с плавающей запятой
+   SSE - включить использование инструкций, доступных для процессоров, поддерживающих SSE
+   SSE2 - (по умолчанию) включить использование инструкций, доступных для процессоров, поддерживающих SSE2
+   AVX - включить использование инструкций, доступных для процессоров, поддерживающих AVX
+   AVX2 - включить использование инструкций, доступных для процессоров, поддерживающих AVX2
+   AVX512 - включить использование инструкций, доступных для процессоров, поддерживающих AVX-512
+/Qimprecise_fwaits создавать FWAITs только на границах "try", не внутри "try"
+/Qsafe_fp_loads формировать безопасные загрузки FP
+/QIntel-jcc-erratum - включить устранение рисков Intel JCC Erratum
+/Qspectre-load Включить устранение рисков Spectre для всех инструкций, которые загружают память
+/Qspectre-load-cf Включить устранение рисков Spectre для всех инструкций управления потоком, которые загружают память
+/fpcvt:<IA|BC> совместимость преобразования числа с плавающей точкой в беззнаковое целое
+   IA - результаты совместимы с инструкцией VCVTTSD2USI
+   BC - результаты, совместимые с компилятором VS2017 и более ранних версий
+
+                              -ВЫХОДНЫЕ ФАЙЛЫ-
+
+/Fa[файл] - задать имя файла листинга сборки
+/FA[scu] настроить список сборок        /Fd[файл] задать имя PDB-файла
+/Fe<файл> задать имя исполняемого файла /Fm[файл] задать имя файла соответствий
+/Fo<файл> задать имя объектного файла   
+/Fp<файл> задать имя файла предкомпилированного заголовка
+/Fr[файл] задать имя исходного файла браузера
+/FR[файл] задать имя расширенного SBR-файла
+/Fi[файл] имя файла препроцессора       /Fd: <файл> задание имени PDB-файла
+/Fe: <файл> задание имени исполняемого файла
+/Fm: <файл> задание имени файла сопоставления
+/Fo: <файл> задание имени объектного файла
+/Fp: <файл> задание имени PCH-файла     
+/FR: <файл> задание имени расширенного SBR-файла
+/Fi: <файл> задание имени файла препроцессора
+/Ft<dir> расположение файлов заголовков, созданных для директивы #import
+/doc[файл] обработать комментарии к XML-документации и дать имя (необязательно) XDC-файлу
+
+                              -ПРЕПРОЦЕССОР-
+
+/AI<каталог> добавить к пути поиска сборок
+/FU<файл> обязательное использование сборки или модуля 
+/C не удалять комментарии               
+/D<имя>{=|#}<текст> задать макроопределение
+/E вывод сообщений в stdout             /EP вывод сообщений в stdout, без #line
+/P вывод сообщений в файл               /Fx добавить внесенный код в файл
+/FI<файл> задать имя обязательно включаемого файла
+/U<имя> удалить встроенное макроопределение
+/u удалить все встроенные макроопределения
+/I<каталог> добавить в путь поиска включаемых файлов
+/X пропустить "standard places"         
+/PH создает #pragma file_hash во время предварительной обработки
+/PD выводить все определения макросов   
+
+                                -ЯЗЫК-
+
+/std:<c++14|c++17|c++20|c++latest> - стандартная версия C++
+    c++14 - ISO/IEC 14882:2014 (по умолчанию)
+    c++17 - ISO/IEC 14882:2017
+    c++20 - ISO/IEC 14882:2020
+    c++latest - последний проект стандарта (набор возможностей может быть изменен)
+/permissive[-] включить компиляцию определенного несоответствующего кода (набор возможностей может быть изменен) (включено по умолчанию)
+/Ze включить расширения (по умолчанию)  /Za отключить расширения
+/ZW включение языковых расширений WinRT /Zs только проверка синтаксиса
+/Zc:arg1[,arg2] соответствие языку C++, где аргументы могут быть:
+  forScope[-]           применять стандарт C++ для правил определения областей
+  wchar_t[-]            wchar_t - встроенный тип, а не typedef
+  auto[-]               использовать новый смысл стандартного C++ для auto
+  trigraphs[-]          включить триграфы (отключено по умолчанию)
+  rvalueCast[-]         применять правила явного преобразования типов из стандарта C++
+  strictStrings[-]      отключение преобразования строкового литерала
+                        в [char|wchar_t]* (отключено по умолчанию)
+  implicitNoexcept[-]   включить неявный noexcept для требуемых функций
+  threadSafeInit[-]     включить потокобезопасную локальную статическую инициализацию
+  inline[-]             Удаление функций или данных, на которые нет ссылок, если они
+                        относятся к COMDAT или используют только внутреннее связывание (отключено по умолчанию)
+  sizedDealloc[-]       включить глобальные функции освобождения
+                        памяти по размеру из C++14 (включено по умолчанию)
+  throwingNew[-]        предполагать исключение оператора new при сбое (отключено по умолчанию)
+  referenceBinding[-]   временное значение не будет привязываться к неконстантной
+                        ссылке lvalue (отключено по умолчанию)
+  twoPhase-             отключить двухэтапный поиск имен
+  ternary[-]            применять правила из C++11 для условного оператора (отключено по умолчанию)
+  noexceptTypes[-]      применять правила noexcept C++17 (включено по умолчанию в C++17 и более поздних версиях)
+  alignedNew[-]         включить выравнивание C++17 для динамически выделяемых объектов (по умолчанию включено)
+  hiddenFriend[-]       применить стандартные скрытые дружественные правила C++ (на что указывает /permissive-)
+  externC[-]            применить стандартные правила C++ для функций "extern "C"" (на что указывает /permissive-)
+  lambda[-]             Улучшенная поддержка лямбда-выражений за счет более нового обработчика (по умолчанию отключено).
+  tlsGuards[-]          - создание проверок инициализации TLS-переменных во время выполнения (по умолчанию включено)
+  zeroSizeArrayNew[-]   вызов элемента new/delete для массивов объектов нулевого размера (по умолчанию включено)
+  static_assert[-] строгая обработка "static_assert" (подразумевается /permissive-)
+  __STDC__              определить __STDC__ для 1 в C
+/await разрешает расширение возобновляемых функций
+/await:strict разрешает стандартную поддержку сопрограмм C++20 с более ранними версиями языка
+/constexpr:depth<N>     предельная глубина рекурсии при вычислении constexpr (по умолчанию 512)
+/constexpr:backtrace<N> выводить N вычислений constexpr в диагностике (по умолчанию 10)
+/constexpr:steps<N>     завершать вычисление constexpr через N шагов (по умолчанию 100000)
+/Zi включить отладочную информацию      
+/Z7 включить отладочную информацию старого типа
+/Zo[-] расширить отладочную информацию для оптимизированного кода (включено по умолчанию)
+/ZH:[MD5|SHA1|SHA_256] хэш-алгоритм для вычисления контрольной суммы в сведениях отладки (по умолчанию: SHA_256)
+/Zp[n] паковать структуры по n-байтной границе
+/Zl не включать имя библиотеки по умолчанию в OBJ-файл
+/vd{0|1|2} отключить или включить vtordisp
+/vm<x> тип указателей на члены          
+/std:<c11|c17> стандартная версия C
+    c11 - ISO/IEC 9899:2011
+    c17 - ISO/IEC 9899:2018
+/ZI включить отладочные данные в режиме "Изменить и продолжить"
+/openmp включить языковые расширения OpenMP 2.0
+/openmp:experimental: включить расширения языка OpenMP 2.0, а также выбрать расширения языка OpenMP 3.0 и более поздних версий
+/openmp:llvm расширения языка OpenMP, использующие среду выполнения LLVM
+
+                              -ПРОЧЕЕ-
+
+@<файл> параметры файла ответов         
+/?, /help вывести это справочное сообщение
+/bigobj создать расширенный формат объекта
+/c только компилировать, без компоновки 
+/errorReport: нерекомендуемый параметр. Сообщение о внутренних ошибках компилятора в Майкрософт.
+    none - не отправлять отчет          
+    prompt - предложить немедленную отправку отчета
+    queue - при следующем входе в систему в качестве администратора предложить отправку отчета (параметр по умолчанию)
+    send - автоматически отправлять отчет
+/FC использовать полные пути в диагностических сообщениях
+/H<число> максимальная длина внешнего имени
+/J использовать по умолчанию unsigned для типа char
+/MP[n] использовать до n процессов для компиляции
+/nologo не выводить уведомление об авторских правах
+/showIncludes показать имена включаемых файлов
+/Tc<исходный_файл> компилировать файл как .c
+/Tp<исходный_файл> компилировать файл как .cpp
+/TC компилировать все файлы как .c      /TP компилировать все файлы как .cpp
+/V<строка> задать строку с номером версии
+/Yc[файл] создать PCH-файл              
+/Yd выводить отладочные данные в каждый OBJ-файл
+/Yl[символ] ввести ссылку PCH-файла для отладочной библиотеки
+/Yu[файл] использовать PCH-файл         /Y- отключить все параметры PCH
+/Zm<n> задать максимальное выделение памяти (% от значения по умолчанию)
+/FS принудительно использовать MSPDBSRV.EXE
+/source-charset:<iana-name>|.nnnn: задание исходной кодировки
+/execution-charset:<iana-name>|.nnnn задание кодировки выполнения
+/utf-8 задание UTF-8 в качестве исходной кодировки и кодировки выполнения
+/validate-charset[-] проверка файлов UTF-8 на наличие только допустимых знаков
+/fastfail[-] включение режима fast-fail 
+/JMC[-] включение отладки только собственного кода с помощью функции Just My Code
+/presetPadding[-] инициализация заполнения нулевым значением для типов классов на основе стека
+/volatileMetadata[-] создает метаданные при доступах к энергозависимой памяти
+/sourcelink [file] файл, содержащий сведения о ссылке на источник
+
+                                -КОМПОНОВКА-
+
+/LD создать библиотеку .DLL             
+/LDd создать отладочную библиотеку (.DLL)
+/LN создать .netmodule                  /F<число> задать размер стека
+/link [параметры компоновщика и библиотеки]
+/MD компоновать с MSVCRT.LIB            /MT компоновать с LIBCMT.LIB
+/MDd компоновать с отладочной библиотекой MSVCRTD.LIB
+/MTd компоновать с отладочной библиотекой LIBCMTD.LIB
+
+                              -АНАЛИЗ КОДА-
+
+/analyze[-] Включить анализ машинного кода
+/analyze:quiet[-] Не выводить предупреждения на консоль
+/analyze:log<имя> Вывод предупреждений в файл
+/analyze:autolog Запись журнала в *.pftlog
+/analyze:autolog:ext<расширение> Запись журнала в *.<расширение>
+/analyze:autolog- Не записывать файл журнала
+/analyze:WX- Предупреждения не являются критическими
+/analyze:stacksize<число> Максимальный размер кадра стека
+/analyze:max_paths<число> Максимальное число путей
+/analyze: только анализ, без создания кода
+
+                              -ДИАГНОСТИКА-
+
+/diagnostics:<args,...> - определяет формат сообщений диагностики:
+             classic - сохранение предыдущего формата
+             column[-] - печать сведений столбца
+             caret[-] - печать столбца и указанной исходной строки
+/Wall включить все предупреждения       /w   отключить все предупреждения
+/W<n> установить уровень предупреждений (по умолчанию n=1)
+/Wv:xx[.yy[.zzzzz]] отключить предупреждения, появившиеся после версии xx.yy.zzzzz
+/WX обрабатывать предупреждения как ошибки
+/WL включить однострочные диагностические сообщения
+/wd<n> отключить предупреждение уровня n
+/we<n> обрабатывать предупреждение уровня n как ошибку
+/wo<n> выдавать предупреждение уровня n один раз
+/w<l><n> установить для n уровень предупреждений 1-4
+/external:I <путь>      - расположение внешних заголовков
+/external:env:<var> - переменная среды с расположениями внешних заголовков
+/external:anglebrackets - считать все заголовки в <> внешними
+/external:W<n> - порог предупреждений для внешних заголовков
+/external:templates[-]  - оценка порога предупреждений по всей цепочке создания экземпляров шаблонов
+/sdl - включить дополнительные уведомления и функции безопасности
+/options:strict неизвестные параметры компилятора являются ошибкой
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: C:/_Rabota/wolfBoot/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Professional/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_37b47.vcxproj /p:Configuration=Debug /p:Platform=win32 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine версии 17.2.1+52cd2da31 для .NET Framework
+(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+  Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.32.31328 для x86
+  CMakeCCompilerABI.c
+  (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+  cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_37b47.dir\Debug\\" /Fd"cmTC_37b47.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /analyze- /errorReport:queue "C:\Program Files\Microsoft Visual Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CMakeCCompilerABI.c"
+  cmTC_37b47.vcxproj -> C:\_Rabota\wolfBoot\build\CMakeFiles\CMakeTmp\Debug\cmTC_37b47.exe
+
+
+
+Determining if the include file fcntl.h exists passed with the following output:
+Change Dir: C:/_Rabota/wolfBoot/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Professional/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_fd443.vcxproj /p:Configuration=Debug /p:Platform=win32 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine версии 17.2.1+52cd2da31 для .NET Framework
+(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+  Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.32.31328 для x86
+  CheckIncludeFile.c
+  (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+  cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_fd443.dir\Debug\\" /Fd"cmTC_fd443.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /analyze- /errorReport:queue C:\_Rabota\wolfBoot\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+  cmTC_fd443.vcxproj -> C:\_Rabota\wolfBoot\build\CMakeFiles\CMakeTmp\Debug\cmTC_fd443.exe
+
+
+
+Determining if the include file limits.h exists passed with the following output:
+Change Dir: C:/_Rabota/wolfBoot/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Professional/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_15f61.vcxproj /p:Configuration=Debug /p:Platform=win32 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine версии 17.2.1+52cd2da31 для .NET Framework
+(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+  Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.32.31328 для x86
+  CheckIncludeFile.c
+  (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+  cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_15f61.dir\Debug\\" /Fd"cmTC_15f61.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /analyze- /errorReport:queue C:\_Rabota\wolfBoot\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+  cmTC_15f61.vcxproj -> C:\_Rabota\wolfBoot\build\CMakeFiles\CMakeTmp\Debug\cmTC_15f61.exe
+
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: C:/_Rabota/wolfBoot/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Professional/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_0fb6b.vcxproj /p:Configuration=Debug /p:Platform=win32 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine версии 17.2.1+52cd2da31 для .NET Framework
+(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+  Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.32.31328 для x86
+  CheckIncludeFile.c
+  (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+  cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_0fb6b.dir\Debug\\" /Fd"cmTC_0fb6b.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /analyze- /errorReport:queue C:\_Rabota\wolfBoot\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+  cmTC_0fb6b.vcxproj -> C:\_Rabota\wolfBoot\build\CMakeFiles\CMakeTmp\Debug\cmTC_0fb6b.exe
+
+
+
+Determining if the include file time.h exists passed with the following output:
+Change Dir: C:/_Rabota/wolfBoot/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Professional/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_13f8b.vcxproj /p:Configuration=Debug /p:Platform=win32 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine версии 17.2.1+52cd2da31 для .NET Framework
+(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+  Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.32.31328 для x86
+  CheckIncludeFile.c
+  (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+  cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_13f8b.dir\Debug\\" /Fd"cmTC_13f8b.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /analyze- /errorReport:queue C:\_Rabota\wolfBoot\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+  cmTC_13f8b.vcxproj -> C:\_Rabota\wolfBoot\build\CMakeFiles\CMakeTmp\Debug\cmTC_13f8b.exe
+
+
+
+Determining if the include file errno.h exists passed with the following output:
+Change Dir: C:/_Rabota/wolfBoot/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Professional/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_4d5cc.vcxproj /p:Configuration=Debug /p:Platform=win32 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine версии 17.2.1+52cd2da31 для .NET Framework
+(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+  Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.32.31328 для x86
+  CheckIncludeFile.c
+  (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+  cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_4d5cc.dir\Debug\\" /Fd"cmTC_4d5cc.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /analyze- /errorReport:queue C:\_Rabota\wolfBoot\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+  cmTC_4d5cc.vcxproj -> C:\_Rabota\wolfBoot\build\CMakeFiles\CMakeTmp\Debug\cmTC_4d5cc.exe
+
+
+
+Determining if the include file inttypes.h exists passed with the following output:
+Change Dir: C:/_Rabota/wolfBoot/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Professional/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_01079.vcxproj /p:Configuration=Debug /p:Platform=win32 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine версии 17.2.1+52cd2da31 для .NET Framework
+(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+  Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.32.31328 для x86
+  CheckIncludeFile.c
+  (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+  cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_01079.dir\Debug\\" /Fd"cmTC_01079.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /analyze- /errorReport:queue C:\_Rabota\wolfBoot\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+  cmTC_01079.vcxproj -> C:\_Rabota\wolfBoot\build\CMakeFiles\CMakeTmp\Debug\cmTC_01079.exe
+
+
+
+Determining if the include file memory.h exists passed with the following output:
+Change Dir: C:/_Rabota/wolfBoot/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Professional/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_f2dea.vcxproj /p:Configuration=Debug /p:Platform=win32 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine версии 17.2.1+52cd2da31 для .NET Framework
+(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+  Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.32.31328 для x86
+  CheckIncludeFile.c
+  (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+  cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f2dea.dir\Debug\\" /Fd"cmTC_f2dea.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /analyze- /errorReport:queue C:\_Rabota\wolfBoot\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+  cmTC_f2dea.vcxproj -> C:\_Rabota\wolfBoot\build\CMakeFiles\CMakeTmp\Debug\cmTC_f2dea.exe
+
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: C:/_Rabota/wolfBoot/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Professional/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_2c172.vcxproj /p:Configuration=Debug /p:Platform=win32 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine версии 17.2.1+52cd2da31 для .NET Framework
+(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+  Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.32.31328 для x86
+  (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+  CheckIncludeFile.c
+  cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_2c172.dir\Debug\\" /Fd"cmTC_2c172.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /analyze- /errorReport:queue C:\_Rabota\wolfBoot\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+  cmTC_2c172.vcxproj -> C:\_Rabota\wolfBoot\build\CMakeFiles\CMakeTmp\Debug\cmTC_2c172.exe
+
+
+
+Determining if the include file stdlib.h exists passed with the following output:
+Change Dir: C:/_Rabota/wolfBoot/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Professional/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_2698e.vcxproj /p:Configuration=Debug /p:Platform=win32 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine версии 17.2.1+52cd2da31 для .NET Framework
+(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+  Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.32.31328 для x86
+  CheckIncludeFile.c
+  (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+  cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_2698e.dir\Debug\\" /Fd"cmTC_2698e.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /analyze- /errorReport:queue C:\_Rabota\wolfBoot\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+  cmTC_2698e.vcxproj -> C:\_Rabota\wolfBoot\build\CMakeFiles\CMakeTmp\Debug\cmTC_2698e.exe
+
+
+
+Determining if the include file string.h exists passed with the following output:
+Change Dir: C:/_Rabota/wolfBoot/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Professional/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_deddb.vcxproj /p:Configuration=Debug /p:Platform=win32 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine версии 17.2.1+52cd2da31 для .NET Framework
+(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+  Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.32.31328 для x86
+  (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+  CheckIncludeFile.c
+  cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_deddb.dir\Debug\\" /Fd"cmTC_deddb.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /analyze- /errorReport:queue C:\_Rabota\wolfBoot\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+  cmTC_deddb.vcxproj -> C:\_Rabota\wolfBoot\build\CMakeFiles\CMakeTmp\Debug\cmTC_deddb.exe
+
+
+
+Determining if the include file sys/stat.h exists passed with the following output:
+Change Dir: C:/_Rabota/wolfBoot/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Professional/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_221ad.vcxproj /p:Configuration=Debug /p:Platform=win32 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine версии 17.2.1+52cd2da31 для .NET Framework
+(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+  Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.32.31328 для x86
+  CheckIncludeFile.c
+  (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+  cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_221ad.dir\Debug\\" /Fd"cmTC_221ad.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /analyze- /errorReport:queue C:\_Rabota\wolfBoot\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+  cmTC_221ad.vcxproj -> C:\_Rabota\wolfBoot\build\CMakeFiles\CMakeTmp\Debug\cmTC_221ad.exe
+
+
+
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: C:/_Rabota/wolfBoot/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Professional/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_d3977.vcxproj /p:Configuration=Debug /p:Platform=win32 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine версии 17.2.1+52cd2da31 для .NET Framework
+(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+  Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.32.31328 для x86
+  CheckIncludeFile.c
+  (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+  cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_d3977.dir\Debug\\" /Fd"cmTC_d3977.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /analyze- /errorReport:queue C:\_Rabota\wolfBoot\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+  cmTC_d3977.vcxproj -> C:\_Rabota\wolfBoot\build\CMakeFiles\CMakeTmp\Debug\cmTC_d3977.exe
+
+
+
+Determining if the function memset exists passed with the following output:
+Change Dir: C:/_Rabota/wolfBoot/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Professional/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_6d6a3.vcxproj /p:Configuration=Debug /p:Platform=win32 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine версии 17.2.1+52cd2da31 для .NET Framework
+(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+  Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.32.31328 для x86
+  CheckFunctionExists.c
+  (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+  cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=memset /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_6d6a3.dir\Debug\\" /Fd"cmTC_6d6a3.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /analyze- /errorReport:queue "C:\Program Files\Microsoft Visual Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CheckFunctionExists.c"
+  cmTC_6d6a3.vcxproj -> C:\_Rabota\wolfBoot\build\CMakeFiles\CMakeTmp\Debug\cmTC_6d6a3.exe
+
+
+
+Determining if the function strftime exists passed with the following output:
+Change Dir: C:/_Rabota/wolfBoot/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Professional/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_1c65f.vcxproj /p:Configuration=Debug /p:Platform=win32 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine версии 17.2.1+52cd2da31 для .NET Framework
+(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+  Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.32.31328 для x86
+  CheckFunctionExists.c
+  (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+  cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=strftime /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_1c65f.dir\Debug\\" /Fd"cmTC_1c65f.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /analyze- /errorReport:queue "C:\Program Files\Microsoft Visual Studio\2022\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CheckFunctionExists.c"
+  cmTC_1c65f.vcxproj -> C:\_Rabota\wolfBoot\build\CMakeFiles\CMakeTmp\Debug\cmTC_1c65f.exe
+
+
+
+Determining size of long long passed with the following output:
+Change Dir: C:/_Rabota/wolfBoot/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Professional/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_d75b8.vcxproj /p:Configuration=Debug /p:Platform=win32 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine версии 17.2.1+52cd2da31 для .NET Framework
+(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+  Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.32.31328 для x86
+  SIZEOF_LONG_LONG.c
+  (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+  cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_d75b8.dir\Debug\\" /Fd"cmTC_d75b8.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /analyze- /errorReport:queue C:\_Rabota\wolfBoot\build\CMakeFiles\CheckTypeSize\SIZEOF_LONG_LONG.c
+  cmTC_d75b8.vcxproj -> C:\_Rabota\wolfBoot\build\CMakeFiles\CMakeTmp\Debug\cmTC_d75b8.exe
+
+
+
+Determining size of long passed with the following output:
+Change Dir: C:/_Rabota/wolfBoot/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Professional/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_e9b9c.vcxproj /p:Configuration=Debug /p:Platform=win32 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine версии 17.2.1+52cd2da31 для .NET Framework
+(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+  Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.32.31328 для x86
+  SIZEOF_LONG.c
+  (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+  cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_e9b9c.dir\Debug\\" /Fd"cmTC_e9b9c.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /analyze- /errorReport:queue C:\_Rabota\wolfBoot\build\CMakeFiles\CheckTypeSize\SIZEOF_LONG.c
+  cmTC_e9b9c.vcxproj -> C:\_Rabota\wolfBoot\build\CMakeFiles\CMakeTmp\Debug\cmTC_e9b9c.exe
+
+
+
+Determining size of time_t passed with the following output:
+Change Dir: C:/_Rabota/wolfBoot/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Professional/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_908aa.vcxproj /p:Configuration=Debug /p:Platform=win32 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine версии 17.2.1+52cd2da31 для .NET Framework
+(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+  Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.32.31328 для x86
+  SIZEOF_TIME_T.c
+  (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+  cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_908aa.dir\Debug\\" /Fd"cmTC_908aa.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /analyze- /errorReport:queue C:\_Rabota\wolfBoot\build\CMakeFiles\CheckTypeSize\SIZEOF_TIME_T.c
+  cmTC_908aa.vcxproj -> C:\_Rabota\wolfBoot\build\CMakeFiles\CMakeTmp\Debug\cmTC_908aa.exe
+
+
+
+Performing C SOURCE FILE Test THREAD_LS_ON succeeded with the following output:
+Change Dir: C:/_Rabota/wolfBoot/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Professional/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_34a24.vcxproj /p:Configuration=Debug /p:Platform=win32 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine версии 17.2.1+52cd2da31 для .NET Framework
+(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+  Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.32.31328 для x86
+  src.c
+  (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+  cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D THREAD_LS_ON /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_34a24.dir\Debug\\" /Fd"cmTC_34a24.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /analyze- /errorReport:queue C:\_Rabota\wolfBoot\build\CMakeFiles\CMakeTmp\src.c
+  cmTC_34a24.vcxproj -> C:\_Rabota\wolfBoot\build\CMakeFiles\CMakeTmp\Debug\cmTC_34a24.exe
+
+
+Source file was:
+#include <stdlib.h>
+                  static void foo(void) {
+                     static __declspec(thread) int bar;
+                     exit(1);
+                  }
+
+                  int main() {
+                    return 0;
+                  }

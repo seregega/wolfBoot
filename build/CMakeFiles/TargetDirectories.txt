@@ -1,0 +1,11 @@
+C:/_Rabota/wolfBoot/build/CMakeFiles/wolfssl.dir
+C:/_Rabota/wolfBoot/build/CMakeFiles/client.dir
+C:/_Rabota/wolfBoot/build/CMakeFiles/server.dir
+C:/_Rabota/wolfBoot/build/CMakeFiles/echoclient.dir
+C:/_Rabota/wolfBoot/build/CMakeFiles/echoserver.dir
+C:/_Rabota/wolfBoot/build/CMakeFiles/unit_test.dir
+C:/_Rabota/wolfBoot/build/CMakeFiles/wolfcrypttest.dir
+C:/_Rabota/wolfBoot/build/CMakeFiles/wolfcryptbench.dir
+C:/_Rabota/wolfBoot/build/CMakeFiles/INSTALL.dir
+C:/_Rabota/wolfBoot/build/CMakeFiles/ALL_BUILD.dir
+C:/_Rabota/wolfBoot/build/CMakeFiles/ZERO_CHECK.dir

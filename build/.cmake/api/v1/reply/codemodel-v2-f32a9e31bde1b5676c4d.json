@@ -1,0 +1,520 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-6d381d33dc563ab4235a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "wolfssl",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-Debug-b45124dbcb48d349ce3b.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-Debug-5f50c63210a5dc093451.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "client::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-client-Debug-85a838f50dea9b6efb1b.json",
+					"name" : "client",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "echoclient::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-echoclient-Debug-513e22eb3f668a56acb0.json",
+					"name" : "echoclient",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "echoserver::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-echoserver-Debug-188d980aed0eb06a64bf.json",
+					"name" : "echoserver",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "server::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-server-Debug-4a7945dcb3d0990f13bf.json",
+					"name" : "server",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "unit_test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-unit_test-Debug-3d2bcbe3c5d0ee8d029d.json",
+					"name" : "unit_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "wolfcryptbench::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-wolfcryptbench-Debug-be21452a731211d4ab68.json",
+					"name" : "wolfcryptbench",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "wolfcrypttest::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-wolfcrypttest-Debug-277d10ec4fb6c4342a1f.json",
+					"name" : "wolfcrypttest",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "wolfssl::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-wolfssl-Debug-a8ef2018f45dbdd4b3c9.json",
+					"name" : "wolfssl",
+					"projectIndex" : 0
+				}
+			]
+		},
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Release-09fa02701b8b2bc46032.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "wolfssl",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-Release-b45124dbcb48d349ce3b.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-Release-5f50c63210a5dc093451.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "client::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-client-Release-e8f25b3fb0c2fa71d137.json",
+					"name" : "client",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "echoclient::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-echoclient-Release-cfa1c287521e17291cae.json",
+					"name" : "echoclient",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "echoserver::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-echoserver-Release-a75e099fbe3d9b7c83b2.json",
+					"name" : "echoserver",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "server::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-server-Release-550505afeaed1b028094.json",
+					"name" : "server",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "unit_test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-unit_test-Release-d1ddb1a0150dbc43e097.json",
+					"name" : "unit_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "wolfcryptbench::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-wolfcryptbench-Release-9411fffa765fcf32d474.json",
+					"name" : "wolfcryptbench",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "wolfcrypttest::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-wolfcrypttest-Release-ccb3c36b60f8abd8323c.json",
+					"name" : "wolfcrypttest",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "wolfssl::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-wolfssl-Release-9f0a4d58a6fb18dade9e.json",
+					"name" : "wolfssl",
+					"projectIndex" : 0
+				}
+			]
+		},
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-MinSizeRel-f71e5c2225cd30f3aa7b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				}
+			],
+			"name" : "MinSizeRel",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "wolfssl",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-MinSizeRel-b45124dbcb48d349ce3b.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-MinSizeRel-5f50c63210a5dc093451.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "client::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-client-MinSizeRel-f2d151f25913e6f1d2f2.json",
+					"name" : "client",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "echoclient::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-echoclient-MinSizeRel-4000b59ba4588b6d5526.json",
+					"name" : "echoclient",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "echoserver::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-echoserver-MinSizeRel-aa754cbcf3f280e001a7.json",
+					"name" : "echoserver",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "server::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-server-MinSizeRel-15c3490129976d39b7cb.json",
+					"name" : "server",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "unit_test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-unit_test-MinSizeRel-a44c2a93aa42af4fc38f.json",
+					"name" : "unit_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "wolfcryptbench::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-wolfcryptbench-MinSizeRel-6b5e424bdac58b1208f0.json",
+					"name" : "wolfcryptbench",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "wolfcrypttest::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-wolfcrypttest-MinSizeRel-45b0c51ae324c9528ae4.json",
+					"name" : "wolfcrypttest",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "wolfssl::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-wolfssl-MinSizeRel-44679e91231041aae04c.json",
+					"name" : "wolfssl",
+					"projectIndex" : 0
+				}
+			]
+		},
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-RelWithDebInfo-6af3eba589fa5d564e6d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				}
+			],
+			"name" : "RelWithDebInfo",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "wolfssl",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-RelWithDebInfo-b45124dbcb48d349ce3b.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-RelWithDebInfo-5f50c63210a5dc093451.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "client::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-client-RelWithDebInfo-234765291315f7d29908.json",
+					"name" : "client",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "echoclient::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-echoclient-RelWithDebInfo-bb71a9dc60c4028ef673.json",
+					"name" : "echoclient",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "echoserver::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-echoserver-RelWithDebInfo-c3be171bd63b82e0ce00.json",
+					"name" : "echoserver",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "server::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-server-RelWithDebInfo-60f48e9772ce5f736a7f.json",
+					"name" : "server",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "unit_test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-unit_test-RelWithDebInfo-0ee4100dc5fcc00536ca.json",
+					"name" : "unit_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "wolfcryptbench::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-wolfcryptbench-RelWithDebInfo-e266930d035c77aeefeb.json",
+					"name" : "wolfcryptbench",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "wolfcrypttest::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-wolfcrypttest-RelWithDebInfo-0da2f6eee74cbe509237.json",
+					"name" : "wolfcrypttest",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "wolfssl::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-wolfssl-RelWithDebInfo-f823e0547837b8676674.json",
+					"name" : "wolfssl",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/_Rabota/wolfBoot/build",
+		"source" : "C:/_Rabota/wolfBoot/lib/wolfssl"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

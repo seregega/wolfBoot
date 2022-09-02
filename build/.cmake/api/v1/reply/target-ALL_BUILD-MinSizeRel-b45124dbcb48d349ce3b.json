@@ -1,0 +1,57 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "wolfssl::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "client::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "server::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "echoserver::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "unit_test::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "echoclient::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "wolfcrypttest::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "wolfcryptbench::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+	"isGeneratorProvided" : true,
+	"name" : "ALL_BUILD",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

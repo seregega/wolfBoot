@@ -1,0 +1,215 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 2084,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 2091,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 2095,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 2099,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 2103,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 2110,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 2113,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 2118,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 2132,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"MinSizeRel/wolfssl.lib"
+			],
+			"targetId" : "wolfssl::@6890427a1f51a3e7e1df",
+			"targetIndex" : 9,
+			"targetIsImportLibrary" : true,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "bin",
+			"paths" : 
+			[
+				"MinSizeRel/wolfssl.dll"
+			],
+			"targetId" : "wolfssl::@6890427a1f51a3e7e1df",
+			"targetIndex" : 9,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "include/wolfssl",
+			"paths" : 
+			[
+				{
+					"from" : "wolfssl",
+					"to" : "."
+				}
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "include/cyassl",
+			"paths" : 
+			[
+				{
+					"from" : "cyassl",
+					"to" : "."
+				}
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "include/wolfssl",
+			"paths" : 
+			[
+				{
+					"from" : "wolfssl",
+					"to" : "."
+				}
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "Unspecified",
+			"destination" : "include/cyassl",
+			"paths" : 
+			[
+				{
+					"from" : "cyassl",
+					"to" : "."
+				}
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 6,
+			"component" : "Unspecified",
+			"destination" : "share/doc/wolfssl/example",
+			"paths" : 
+			[
+				"examples/echoserver/echoserver.c",
+				"examples/sctp/sctp-server.c",
+				"examples/sctp/sctp-client-dtls.c",
+				"examples/sctp/sctp-client.c",
+				"examples/sctp/sctp-server-dtls.c",
+				"examples/echoclient/echoclient.c",
+				"examples/server/server.c",
+				"examples/benchmark/tls_bench.c",
+				"examples/client/client.c"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 7,
+			"component" : "Unspecified",
+			"destination" : "share/doc/wolfssl",
+			"paths" : 
+			[
+				"doc/README.txt",
+				"certs/taoCert.txt"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 8,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/wolfssl",
+			"exportName" : "wolfssl-targets",
+			"exportTargets" : 
+			[
+				{
+					"id" : "wolfssl::@6890427a1f51a3e7e1df",
+					"index" : 9
+				}
+			],
+			"paths" : 
+			[
+				"CMakeFiles/Export/lib/cmake/wolfssl/wolfssl-config.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 9,
+			"component" : "Unspecified",
+			"destination" : "lib/pkgconfig",
+			"paths" : 
+			[
+				"C:/_Rabota/wolfBoot/build/support/wolfssl.pc"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	}
+}
