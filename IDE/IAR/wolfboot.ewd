@@ -76,7 +76,7 @@
                 </option>
                 <option>
                     <name>OCDownloadVerifyAll</name>
-                    <state>0</state>
+                    <state>1</state>
                 </option>
                 <option>
                     <name>OCProductVersion</name>
@@ -1171,7 +1171,7 @@
                 <option>
                     <name>CCSTLinkJtagSpeedList</name>
                     <version>2</version>
-                    <state>0</state>
+                    <state>9</state>
                 </option>
                 <option>
                     <name>CCSTLinkDAPNumber</name>
@@ -1188,7 +1188,7 @@
                 <option>
                     <name>CCSTLinkProbeList</name>
                     <version>1</version>
-                    <state>0</state>
+                    <state>2</state>
                 </option>
             </data>
         </settings>

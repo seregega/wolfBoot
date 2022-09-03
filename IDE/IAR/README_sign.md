@@ -1,0 +1,1 @@
+ C:\_Rabota\wolfBoot\IDE\IAR> keytools\sign.exe --ecc256 --sha256 Debug\Exe\blink.bin ../../wolfboot_signing_private_key.der 1
