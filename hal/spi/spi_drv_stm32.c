@@ -85,18 +85,19 @@ static void spi_tpm2_pin_setup(void)
 static void spi1_pins_setup(void)
 {
     uint32_t reg;
-    RCC_GPIO_CLOCK_ER |= SPI_PIO_CEN;
+    RCC_GPIO_CLOCK_ER |= SPI_PIO_CEN; //enable clock gpiob
+    RCC_GPIO_CLOCK_ER |= CEN_GPIOA; //enable clock gpioa
     /* Set mode = AF */
-    reg = SPI_PIO_MODE & ~ (0x03 << (SPI1_CLOCK_PIN * 2));
-    SPI_PIO_MODE = reg | (2 << (SPI1_CLOCK_PIN * 2));
+    reg = SPI_PIO_MODE_CLK & ~ (0x03 << (SPI1_CLOCK_PIN * 2));
+    SPI_PIO_MODE_CLK = reg | (2 << (SPI1_CLOCK_PIN * 2));
     reg = SPI_PIO_MODE & ~ (0x03 << (SPI1_MOSI_PIN * 2));
     SPI_PIO_MODE = reg | (2 << (SPI1_MOSI_PIN * 2));
     reg = SPI_PIO_MODE & ~ (0x03 << (SPI1_MISO_PIN * 2));
     SPI_PIO_MODE = reg | (2 << (SPI1_MISO_PIN * 2));
 
     /* Alternate function: use low pins (5,6,7) */
-    reg = SPI_PIO_AFL & ~(0xf << ((SPI1_CLOCK_PIN) * 4));
-    SPI_PIO_AFL = reg | (SPI1_PIN_AF << ((SPI1_CLOCK_PIN) * 4));
+    reg = SPI_PIO_AFL_CLK & ~(0xf << ((SPI1_CLOCK_PIN) * 4));
+    SPI_PIO_AFL_CLK = reg | (SPI1_PIN_AF << ((SPI1_CLOCK_PIN) * 4));
     reg = SPI_PIO_AFL & ~(0xf << ((SPI1_MOSI_PIN) * 4));
     SPI_PIO_AFL = reg | (SPI1_PIN_AF << ((SPI1_MOSI_PIN) * 4));
     reg = SPI_PIO_AFL & ~(0xf << ((SPI1_MISO_PIN) * 4));
@@ -123,7 +124,7 @@ static void spi_pins_release(void)
 {
     uint32_t reg;
     /* Set mode = 0 */
-    SPI_PIO_MODE &= ~ (0x03 << (SPI1_CLOCK_PIN * 2));
+    SPI_PIO_MODE_CLK &= ~ (0x03 << (SPI1_CLOCK_PIN * 2));
     SPI_PIO_MODE &= ~ (0x03 << (SPI1_MOSI_PIN * 2));
     SPI_PIO_MODE &= ~ (0x03 << (SPI1_MISO_PIN * 2));
 
@@ -133,7 +134,7 @@ static void spi_pins_release(void)
     SPI_PIO_AFL &= ~(0xf << ((SPI1_MISO_PIN) * 4));
 
     /* Floating */
-    SPI_PIO_PUPD &= ~ (0x03 << (SPI1_CLOCK_PIN * 2));
+    SPI_PIO_PUPD_CLK &= ~ (0x03 << (SPI1_CLOCK_PIN * 2));
     SPI_PIO_PUPD &= ~ (0x03 << (SPI1_MOSI_PIN * 2));
     SPI_PIO_PUPD &= ~ (0x03 << (SPI1_MISO_PIN * 2));
 

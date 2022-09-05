@@ -39,11 +39,13 @@
 #define GPIOD_BASE (0x40020C00)
 #define GPIOE_BASE (0x40021000)
 #define SPI_GPIO    GPIOB_BASE
-#define SPI_CS_GPIO GPIOE_BASE
-#define SPI_CS_FLASH 1 /* Flash CS connected to GPIOE1 */
+#define SPI_GPIO_CLK    GPIOA_BASE //PA5
+#define SPI_CS_GPIO GPIOB_BASE
+
+#define SPI_CS_FLASH 6 /* Flash CS connected to PB6 */
 #define SPI_CS_TPM   0 /* TPM CS connected to GPIOE0 */
 #define SPI1_PIN_AF    5 /* Alternate function for SPI pins */
-#define SPI1_CLOCK_PIN 3 /* SPI_SCK: PB3  */
+#define SPI1_CLOCK_PIN 5 // PA5  /* SPI_SCK: PB3  */
 #define SPI1_MISO_PIN  4 /* SPI_MISO PB4  */
 #define SPI1_MOSI_PIN  5 /* SPI_MOSI PB5  */
 #endif
@@ -145,6 +147,19 @@
 #define SPI_PIO_OSPD  (*(volatile uint32_t *)(SPI_PIO_BASE + 0x08))
 #define SPI_PIO_PUPD (*(volatile uint32_t *)(SPI_PIO_BASE + 0x0c))
 #define SPI_PIO_BSRR (*(volatile uint32_t *)(SPI_PIO_BASE + 0x18))
+
+#define SPI_PIO_MODE_CLK  (*(volatile uint32_t *)(SPI_GPIO_CLK + 0x00))
+#define SPI_PIO_AFL_CLK   (*(volatile uint32_t *)(SPI_GPIO_CLK + 0x20))
+#define SPI_PIO_AFH_CLK   (*(volatile uint32_t *)(SPI_GPIO_CLK + 0x24))
+#define SPI_PIO_OSPD_CLK  (*(volatile uint32_t *)(SPI_GPIO_CLK + 0x08))
+#define SPI_PIO_PUPD_CLK (*(volatile uint32_t *)(SPI_GPIO_CLK + 0x0c))
+#define SPI_PIO_BSRR_CLK (*(volatile uint32_t *)(SPI_GPIO_CLK + 0x18))
+
+
+
+
+
+
 #define SPI_PIO_CS_MODE  (*(volatile uint32_t *)(SPI_CS_PIO_BASE + 0x00))
 #define SPI_PIO_CS_AFL   (*(volatile uint32_t *)(SPI_CS_PIO_BASE + 0x20))
 #define SPI_PIO_CS_AFH   (*(volatile uint32_t *)(SPI_CS_PIO_BASE + 0x24))

@@ -37,6 +37,8 @@ extern char **main_argv;
 extern int main_argc;
 int main(int argc, char *argv[])
 #else
+
+
 int main(void)
 #endif
 {
