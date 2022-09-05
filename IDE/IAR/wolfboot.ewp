@@ -667,7 +667,7 @@
             <data>
                 <extensions></extensions>
                 <cmdline></cmdline>
-                <hasPrio>48</hasPrio>
+                <hasPrio>1</hasPrio>
                 <buildSequence>inputOutputBased</buildSequence>
             </data>
         </settings>
@@ -2224,6 +2224,12 @@
         </file>
         <file>
             <name>$PROJ_DIR$\..\..\src\loader.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\hal\spi\spi_drv_stm32.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\src\spi_flash.c</name>
         </file>
         <file>
             <name>$PROJ_DIR$\..\..\src\string.c</name>

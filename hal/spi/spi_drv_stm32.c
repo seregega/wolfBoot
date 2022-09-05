@@ -43,6 +43,12 @@ void RAMFUNCTION spi_cs_on(int pin)
 }
 
 
+    /**SPI1 GPIO Configuration
+    PA5     ------> SPI1_SCK
+    PB4     ------> SPI1_MISO
+    PB5     ------> SPI1_MOSI
+    */
+
 static void spi_flash_pin_setup(void)
 {
     uint32_t reg;
@@ -71,6 +77,11 @@ static void spi_tpm2_pin_setup(void)
 #endif
 }
 
+    /**SPI1 GPIO Configuration
+    PA5     ------> SPI1_SCK
+    PB4     ------> SPI1_MISO
+    PB5     ------> SPI1_MOSI
+    */
 static void spi1_pins_setup(void)
 {
     uint32_t reg;

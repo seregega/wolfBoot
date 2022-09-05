@@ -40,4 +40,7 @@
 #define WOLFBOOT_LOAD_DTS_ADDRESS            
 #define WOLFBOOT_FIXED_PARTITIONS
 
+#define EXT_FLASH
+#define SPI_FLASH
+
 #endif /* !H_TARGETS_TARGET_ */

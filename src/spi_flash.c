@@ -26,7 +26,7 @@
 #include "spi_drv.h"
 #include "spi_flash.h"
 
-#ifdef SPI_FLASH
+//#ifdef SPI_FLASH
 
 #define MDID            0x90
 #define RDSR            0x05
@@ -239,4 +239,4 @@ int spi_flash_write(uint32_t address, const void *data, int len)
     return -1;
 }
 
-#endif /* SPI_FLASH */
+//#endif /* SPI_FLASH */
