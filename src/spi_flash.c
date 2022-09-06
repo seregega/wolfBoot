@@ -71,7 +71,7 @@ static uint8_t RAMFUNCTION read_status(void)
     spi_cs_on(SPI_CS_FLASH);
     spi_write(RDSR);
     spi_read();
-    spi_write(0xFF);
+    spi_write(0x00);
     status = spi_read();
     spi_cs_off(SPI_CS_FLASH);
     return status;
@@ -169,8 +169,8 @@ uint16_t spi_flash_probe(void)
 {
     uint8_t manuf, product, b0;
     int i;
-    spi_init(0,0);
-    wait_busy();
+    spi_init(1,1);
+    //wait_busy();
     spi_cs_on(SPI_CS_FLASH);
     spi_write(MDID);
     b0 = spi_read();
