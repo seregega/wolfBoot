@@ -47,7 +47,7 @@
 *.gdb
 
 # automatically generated keys
-*.der
+
 *.pem
 *.sig
 
