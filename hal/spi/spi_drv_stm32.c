@@ -44,9 +44,9 @@ void RAMFUNCTION spi_cs_on(int pin)
 
 
     /**SPI1 GPIO Configuration
-    PA5     ------> SPI1_SCK
-    PB4     ------> SPI1_MISO
-    PB5     ------> SPI1_MOSI
+    PB7     ------> SPI1_WP
+    PB6     ------> SPI1_CS
+    PB8     ------> SPI1_HOLD
     */
 
 static void spi_flash_pin_setup(void)
@@ -59,7 +59,28 @@ static void spi_flash_pin_setup(void)
     SPI_PIO_CS_PUPD = reg | (0x01 << (SPI_CS_FLASH * 2));
     reg = SPI_PIO_CS_OSPD & ~(0x03 << (SPI_CS_FLASH * 2));
     SPI_PIO_CS_OSPD |= (0x03 << (SPI_CS_FLASH * 2));
+    
+    //RCC_GPIO_CLOCK_ER |= SPI_PIO_CS_CEN;
+    reg = SPI_PIO_CS_MODE & ~ (0x03 << (SPI_WP_FLASH * 2));
+    SPI_PIO_CS_MODE = reg | (1 << (SPI_WP_FLASH * 2));
+    reg = SPI_PIO_CS_PUPD & ~(0x03 <<  (SPI_WP_FLASH * 2));
+    SPI_PIO_CS_PUPD = reg | (0x01 << (SPI_WP_FLASH * 2));
+    reg = SPI_PIO_CS_OSPD & ~(0x03 << (SPI_WP_FLASH * 2));
+    SPI_PIO_CS_OSPD |= (0x03 << (SPI_WP_FLASH * 2));
+    
+    reg = SPI_PIO_CS_MODE & ~ (0x03 << (SPI_HOLD_FLASH * 2));
+    SPI_PIO_CS_MODE = reg | (1 << (SPI_HOLD_FLASH * 2));
+    reg = SPI_PIO_CS_PUPD & ~(0x03 <<  (SPI_HOLD_FLASH * 2));
+    SPI_PIO_CS_PUPD = reg | (0x01 << (SPI_HOLD_FLASH * 2));
+    reg = SPI_PIO_CS_OSPD & ~(0x03 << (SPI_HOLD_FLASH * 2));
+    SPI_PIO_CS_OSPD |= (0x03 << (SPI_HOLD_FLASH * 2));
+    
+    
+    
+    
     spi_cs_off(SPI_CS_FLASH);
+    spi_cs_off(SPI_WP_FLASH);
+    spi_cs_off(SPI_HOLD_FLASH);
 }
 
 static void spi_tpm2_pin_setup(void)
@@ -178,8 +199,8 @@ void spi_init(int polarity, int phase)
     static int initialized = 0;
     if (!initialized) {
         initialized++;
-        spi1_pins_setup();
-        spi_flash_pin_setup();
+        spi1_pins_setup(); //mosi miso cs setup
+        spi_flash_pin_setup(); //cs wp hold pins setup
         spi_tpm2_pin_setup();
         APB2_CLOCK_ER |= SPI1_APB2_CLOCK_ER_VAL;
         spi1_reset();

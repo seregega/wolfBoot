@@ -43,6 +43,8 @@
 #define SPI_CS_GPIO GPIOB_BASE
 
 #define SPI_CS_FLASH 6 /* Flash CS connected to PB6 */
+#define SPI_WP_FLASH 7 /* Flash WP connected to PB6 */
+#define SPI_HOLD_FLASH 8 /* Flash HOLD connected to PB6 */
 #define SPI_CS_TPM   0 /* TPM CS connected to GPIOE0 */
 #define SPI1_PIN_AF    5 /* Alternate function for SPI pins */
 #define SPI1_CLOCK_PIN 5 // PA5  /* SPI_SCK: PB3  */
