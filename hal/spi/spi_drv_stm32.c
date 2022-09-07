@@ -109,7 +109,7 @@ static void spi1_pins_setup(void)
     RCC_GPIO_CLOCK_ER |= SPI_PIO_CEN; //enable clock gpiob
     RCC_GPIO_CLOCK_ER |= CEN_GPIOA; //enable clock gpioa
     /* Set mode = AF */
-    reg = SPI_PIO_MODE_CLK & ~ (0x03 << (SPI1_CLOCK_PIN * 2));
+    reg = SPI_PIO_MODE_CLK & ~ (0x03 << (SPI1_CLOCK_PIN * 2)); //5*2=10
     SPI_PIO_MODE_CLK = reg | (2 << (SPI1_CLOCK_PIN * 2));
     reg = SPI_PIO_MODE & ~ (0x03 << (SPI1_MOSI_PIN * 2));
     SPI_PIO_MODE = reg | (2 << (SPI1_MOSI_PIN * 2));
@@ -117,12 +117,18 @@ static void spi1_pins_setup(void)
     SPI_PIO_MODE = reg | (2 << (SPI1_MISO_PIN * 2));
 
     /* Alternate function: use low pins (5,6,7) */
-    reg = SPI_PIO_AFL_CLK & ~(0xf << ((SPI1_CLOCK_PIN) * 4));
-    SPI_PIO_AFL_CLK = reg | (SPI1_PIN_AF << ((SPI1_CLOCK_PIN) * 4));
+    reg = SPI_PIO_AFL_CLK & ~(0xf << ((SPI1_CLOCK_PIN) * 4)); //0x05 == SPI1 Alternate Function mapping
+    SPI_PIO_AFL_CLK = reg | (SPI1_PIN_AF << ((SPI1_CLOCK_PIN) * 4)); //GPIO alternate function low register (GPIOx_AFRL) (x = A..I/J/K)
     reg = SPI_PIO_AFL & ~(0xf << ((SPI1_MOSI_PIN) * 4));
     SPI_PIO_AFL = reg | (SPI1_PIN_AF << ((SPI1_MOSI_PIN) * 4));
     reg = SPI_PIO_AFL & ~(0xf << ((SPI1_MISO_PIN) * 4));
     SPI_PIO_AFL = reg | (SPI1_PIN_AF << ((SPI1_MISO_PIN) * 4));
+    
+    
+        //GPIO port output speed register (GPIOx_OSPEEDR)
+    reg = SPI_PIO_OSPD_CLK & ~(0x03 << ((SPI1_CLOCK_PIN) * 2)); //11: Very high speed
+    SPI_PIO_OSPD_CLK = reg | (0x03 << ((SPI1_CLOCK_PIN) * 2)); //GPIO alternate function low register (GPIOx_AFRL) (x = A..I/J/K)
+    
 
 #ifdef PLATFORM_stm32l0
     reg = SPI_PIO_PUPD & ~(0x03 <<  (SPI1_CLOCK_PIN * 2));
@@ -174,13 +180,19 @@ static void spi1_reset(void)
 uint8_t RAMFUNCTION spi_read(void)
 {
     volatile uint32_t reg;
+    //reg=(uint8_t)SPI1_DR;
+    reg++;
     do {
+
         reg = SPI1_SR;
+
     } while(!(reg & SPI_SR_RX_NOTEMPTY));
+
+        
     return (uint8_t)SPI1_DR;
 }
 
-void RAMFUNCTION spi_write(const char byte)
+     void RAMFUNCTION spi_write(const char byte)
 {
     int i;
     volatile uint32_t reg;
@@ -202,12 +214,12 @@ void spi_init(int polarity, int phase)
         spi1_pins_setup(); //mosi miso cs setup
         spi_flash_pin_setup(); //cs wp hold pins setup
         spi_tpm2_pin_setup();
-        APB2_CLOCK_ER |= SPI1_APB2_CLOCK_ER_VAL;
+        APB2_CLOCK_ER |= SPI1_APB2_CLOCK_ER_VAL; //SPI1EN: SPI1 clock enable
         spi1_reset();
 #ifdef PLATFORM_stm32l0
         SPI1_CR1 = SPI_CR1_MASTER | (polarity << 1) | (phase << 0);
 #else
-        SPI1_CR1 = SPI_CR1_MASTER | (5 << 3) | (polarity << 1) | (phase << 0);
+        SPI1_CR1 = SPI_CR1_MASTER | (1<<9) | (1<<8) | (6 << 3) | (polarity << 1) | (phase << 0); //(5==64div)(4==32div)
 #endif
         SPI1_CR2 |= SPI_CR2_SSOE;
         SPI1_CR1 |= SPI_CR1_SPI_EN;

@@ -264,48 +264,49 @@ static void clock_pll_on(int powersave)
 
     /* Select clock parameters (CPU Speed = 168MHz) */
     cpu_freq = 168000000; (void)cpu_freq; /* not used */
-    pllm = 8;
-    plln = 336;
+    pllm = 4;
+    plln = 168;
     pllp = 2;
-    pllq = 7;
+    pllq = 8;
     pllr = 0; (void)pllr; /* not used */
-    hpre = RCC_PRESCALER_DIV_NONE;
-    ppre1 = RCC_PRESCALER_DIV_4;
-    ppre2 = RCC_PRESCALER_DIV_2;
-    flash_waitstates = 3;
+    hpre = RCC_PRESCALER_DIV_NONE; //AHB prescaler
+    ppre1 = RCC_PRESCALER_DIV_4; //APB Low speed prescaler (APB1)
+    ppre2 = RCC_PRESCALER_DIV_2; //APB high-speed prescaler (APB2)
+    flash_waitstates = 5;
 
     flash_set_waitstates(flash_waitstates);
 
-    /* Enable internal high-speed oscillator. */
-    RCC_CR |= RCC_CR_HSION;
-    DMB();
-    while ((RCC_CR & RCC_CR_HSIRDY) == 0) {};
-
-    /* Select HSI as SYSCLK source. */
-    reg32 = RCC_CFGR;
-    reg32 &= ~((1 << 1) | (1 << 0));
-    RCC_CFGR = (reg32 | RCC_CFGR_SW_HSI);
-    DMB();
-
-    /* Enable external high-speed oscillator 8MHz. */
+    /* .HSEON: HSE clock enable*/
     RCC_CR |= RCC_CR_HSEON;
     DMB();
     while ((RCC_CR & RCC_CR_HSERDY) == 0) {};
+
+    
+    /* Select HSE as SYSCLK source. */
+    reg32 = RCC_CFGR;
+    reg32 &= ~((1 << 1) | (1 << 0));
+    RCC_CFGR = (reg32 | RCC_CFGR_SW_PLL);
+    DMB();
+
+    /* Enable external high-speed oscillator 8MHz. */
+    //RCC_CR |= RCC_CR_HSEON;
+    //DMB();
+    //while ((RCC_CR & RCC_CR_HSERDY) == 0) {};
 
     /*
      * Set prescalers for AHB, ADC, ABP1, ABP2.
      */
     reg32 = RCC_CFGR;
     reg32 &= ~(0xF0);
-    RCC_CFGR = (reg32 | (hpre << 4));
+    RCC_CFGR = (reg32 | (hpre << 4)); //AHB prescaler
     DMB();
     reg32 = RCC_CFGR;
     reg32 &= ~(0x1C00);
-    RCC_CFGR = (reg32 | (ppre1 << 10));
+    RCC_CFGR = (reg32 | (ppre1 << 10)); //APB Low speed prescaler (APB1)
     DMB();
     reg32 = RCC_CFGR;
     reg32 &= ~(0x07 << 13);
-    RCC_CFGR = (reg32 | (ppre2 << 13));
+    RCC_CFGR = (reg32 | (ppre2 << 13));//APB high-speed prescaler (APB2)
     DMB();
 
     /* Set PLL config */
@@ -330,7 +331,7 @@ static void clock_pll_on(int powersave)
     while ((RCC_CFGR & ((1 << 1) | (1 << 0))) != RCC_CFGR_SW_PLL) {};
 
     /* Disable internal high-speed oscillator. */
-    RCC_CR &= ~RCC_CR_HSION;
+    //RCC_CR &= ~RCC_CR_HSION;
 }
 
 void hal_init(void)

@@ -30,9 +30,9 @@
 #define CEN_GPIOE (1 << 4)
 
 #ifdef PLATFORM_stm32f4
-#define APB2_CLOCK_ER     (*(volatile uint32_t *)(0x40023844))
-#define APB2_CLOCK_RST    (*(volatile uint32_t *)(0x40023824))
-#define RCC_GPIO_CLOCK_ER (*(volatile uint32_t *)(0x40023830))
+#define APB2_CLOCK_ER     (*(volatile uint32_t *)(0x40023844)) //RCC APB2 peripheral clock enable register (RCC_APB2ENR)
+#define APB2_CLOCK_RST    (*(volatile uint32_t *)(0x40023824)) //RCC APB2 peripheral reset register (RCC_APB2RSTR)
+#define RCC_GPIO_CLOCK_ER (*(volatile uint32_t *)(0x40023830)) //RCC AHB1 peripheral clock enable register (RCC_AHB1ENR)
 #define GPIOA_BASE (0x40020000)
 #define GPIOB_BASE (0x40020400)
 #define GPIOC_BASE (0x40020800)
@@ -150,8 +150,8 @@
 #define SPI_PIO_PUPD (*(volatile uint32_t *)(SPI_PIO_BASE + 0x0c))
 #define SPI_PIO_BSRR (*(volatile uint32_t *)(SPI_PIO_BASE + 0x18))
 
-#define SPI_PIO_MODE_CLK  (*(volatile uint32_t *)(SPI_GPIO_CLK + 0x00))
-#define SPI_PIO_AFL_CLK   (*(volatile uint32_t *)(SPI_GPIO_CLK + 0x20))
+#define SPI_PIO_MODE_CLK  (*(volatile uint32_t *)(SPI_GPIO_CLK + 0x00)) //GPIO port mode register (GPIOx_MODER) (x = A..I/J/K)
+#define SPI_PIO_AFL_CLK   (*(volatile uint32_t *)(SPI_GPIO_CLK + 0x20)) //GPIO alternate function low register (GPIOx_AFRL) (x = A..I/J/K)
 #define SPI_PIO_AFH_CLK   (*(volatile uint32_t *)(SPI_GPIO_CLK + 0x24))
 #define SPI_PIO_OSPD_CLK  (*(volatile uint32_t *)(SPI_GPIO_CLK + 0x08))
 #define SPI_PIO_PUPD_CLK (*(volatile uint32_t *)(SPI_GPIO_CLK + 0x0c))
