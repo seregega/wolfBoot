@@ -129,6 +129,12 @@ static void spi1_pins_setup(void)
     reg = SPI_PIO_OSPD_CLK & ~(0x03 << ((SPI1_CLOCK_PIN) * 2)); //11: Very high speed
     SPI_PIO_OSPD_CLK = reg | (0x03 << ((SPI1_CLOCK_PIN) * 2)); //GPIO alternate function low register (GPIOx_AFRL) (x = A..I/J/K)
     
+        reg = SPI_PIO_OSPD & ~(0x03 << ((SPI1_MOSI_PIN) * 2)); //11: Very high speed
+    SPI_PIO_OSPD = reg | (0x03 << ((SPI1_MOSI_PIN) * 2)); //GPIO alternate function low register (GPIOx_AFRL) (x = A..I/J/K)
+        reg = SPI_PIO_OSPD & ~(0x03 << ((SPI1_MISO_PIN) * 2)); //11: Very high speed
+    SPI_PIO_OSPD = reg | (0x03 << ((SPI1_MISO_PIN) * 2)); //GPIO alternate function low register (GPIOx_AFRL) (x = A..I/J/K)
+    
+    
 
 #ifdef PLATFORM_stm32l0
     reg = SPI_PIO_PUPD & ~(0x03 <<  (SPI1_CLOCK_PIN * 2));
