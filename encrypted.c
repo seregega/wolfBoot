@@ -1,6 +1,8 @@
-/* loader.c
+/* main.c
  *
- * Copyright (C) 2021 wolfSSL Inc.
+ * Test bare-metal boot-led-on application
+ *
+ * Copyright (C) 2020 wolfSSL Inc.
  *
  * This file is part of wolfBoot.
  *
@@ -19,60 +21,42 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1335, USA
  */
 
-#include "loader.h"
-#include "image.h"
+#include <stdlib.h>
+#include <stdint.h>
+#include <string.h>
+#include "led.h"
 #include "hal.h"
-#include "spi_flash.h"
-#include "uart_flash.h"
 #include "wolfboot/wolfboot.h"
-//#include "aes.c"
 
-#ifdef RAM_CODE
-extern unsigned int _start_text;
-static volatile const uint32_t __attribute__((used)) wolfboot_version = WOLFBOOT_VERSION;
-extern void (** const IV_RAM)(void);
-#endif
-
-#ifdef PLATFORM_sim
-extern char **main_argv;
-extern int main_argc;
-int main(int argc, char *argv[])
-#else
-
+#ifdef PLATFORM_stm32wb
 char enc_key[] = "0123456789abcdef0123456789abcdef" /* ChaCha key (256 bit) */
                  "0123456789ab";                    /* IV nonce    (96 bit) */
 
-
-int main(void)
-#endif
-{
-
-#ifdef PLATFORM_sim
-    /* to forward arguments to the test-app for testing. See
-     * test-app/app_sim.c */
-    main_argv = argv;
-    main_argc = argc;
-#endif
-
+volatile uint32_t time_elapsed = 0;
+void main(void) {
+    uint32_t version;
+    uint32_t l = 0;
+    uint32_t updv;
     hal_init();
+    boot_led_on();
+#ifdef SPI_FLASH
     spi_flash_probe();
-#ifdef UART_FLASH
-    uart_init(UART_FLASH_BITRATE, 8, 'N', 1);
-    uart_send_current_version();
 #endif
-    
-#ifdef WOLFBOOT_TPM
-    wolfBoot_tpm2_init();
-#endif
-    
-#ifdef EXT_ENCRYPTED
+    version = wolfBoot_current_firmware_version();
+    updv = wolfBoot_update_firmware_version();
+    if ((version == 1) && (updv != 8)) {
+        uint32_t sz;
+        boot_led_off();
+#if EXT_ENCRYPTED
         wolfBoot_set_encrypt_key((uint8_t *)enc_key,(uint8_t *)(enc_key +  32));
 #endif
-
-    wolfBoot_start();
-
-    /* wolfBoot_start should never return. */
-    wolfBoot_panic();
-
-    return 0;
+        wolfBoot_update_trigger();
+        boot_led_on();
+    } else {
+        wolfBoot_success();
+    }
+    /* Wait for reboot */
+    while(1)
+        asm volatile("wfi");
 }
+#endif /** PLATFROM_stm32wb **/

@@ -1,4 +1,7 @@
 {
     "cmake.sourceDirectory": "${workspaceFolder}/lib/wolfssl",
-    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools"
+    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+    "files.associations": {
+        "encrypt.h": "c"
+    }
 }

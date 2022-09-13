@@ -34,6 +34,8 @@
 #define WOLFBOOT_PARTITION_UPDATE_ADDRESS    0x700000
 
 #define WOLFBOOT_PARTITION_SWAP_ADDRESS      0x6E0000
+#define WOLFBOOT_KEY_STORE_OFFSET            0x08010000
+#define WOLFBOOT_KEY_STORE_SECTOR_SIZE       0x10000
 
 #define PART_UPDATE_EXT
 #define PART_SWAP_EXT
@@ -41,6 +43,9 @@
 //#define DISABLE_BACKUP
 
 #define DEBUG
+#define EXT_ENCRYPTED
+#define ENCRYPT_WITH_AES256
+#define WOLFSSL_AES_COUNTER
 
 /* Load address in RAM for staged OS (update_ram only) */
 #define WOLFBOOT_DTS_BOOT_ADDRESS            

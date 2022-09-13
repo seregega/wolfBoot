@@ -767,26 +767,30 @@ int wolfBoot_fallback_is_possible(void)
 #ifdef NVM_FLASH_WRITEONCE
 #define ENCRYPT_CACHE NVM_CACHE
 #else
-static uint8_t ENCRYPT_CACHE[NVM_CACHE_SIZE] __attribute__((aligned(32)));
+static uint8_t ENCRYPT_CACHE[256] __attribute__((aligned(32)));
 #endif
 
 static int RAMFUNCTION hal_set_key(const uint8_t *k, const uint8_t *nonce)
 {
+    //store secret key in sector the start of sector 4(stm32f4 memmory map)
+    //with offset 0x0801000
     uint32_t addr = ENCRYPT_TMP_SECRET_OFFSET + WOLFBOOT_PARTITION_BOOT_ADDRESS;
     uint32_t addr_align = addr & (~(WOLFBOOT_SECTOR_SIZE - 1));
     uint32_t addr_off = addr & (WOLFBOOT_SECTOR_SIZE - 1);
     int ret = 0;
     hal_flash_unlock();
     /* casting to unsigned long to abide compilers on 64bit architectures */
-    XMEMCPY(ENCRYPT_CACHE,
-            (void*)(unsigned long)addr_align, WOLFBOOT_SECTOR_SIZE);
-    ret = hal_flash_erase(addr_align, WOLFBOOT_SECTOR_SIZE);
+    //XMEMCPY(ENCRYPT_CACHE,(void*)(unsigned long)addr_align, WOLFBOOT_SECTOR_SIZE);
+    ret = hal_flash_erase(WOLFBOOT_KEY_STORE_OFFSET, WOLFBOOT_KEY_STORE_SECTOR_SIZE);
     if (ret != 0)
         return ret;
-    XMEMCPY(ENCRYPT_CACHE + addr_off, k, ENCRYPT_KEY_SIZE);
-    XMEMCPY(ENCRYPT_CACHE + addr_off + ENCRYPT_KEY_SIZE, nonce,
-        ENCRYPT_NONCE_SIZE);
-    ret = hal_flash_write(addr_align, ENCRYPT_CACHE, WOLFBOOT_SECTOR_SIZE);
+    
+    //XMEMCPY(ENCRYPT_CACHE + addr_off, k, ENCRYPT_KEY_SIZE);
+    //XMEMCPY(ENCRYPT_CACHE + addr_off + ENCRYPT_KEY_SIZE, nonce,ENCRYPT_NONCE_SIZE);
+    
+    XMEMCPY(ENCRYPT_CACHE, k, ENCRYPT_KEY_SIZE);
+    XMEMCPY(ENCRYPT_CACHE + ENCRYPT_KEY_SIZE, nonce,ENCRYPT_NONCE_SIZE);
+    ret = hal_flash_write(WOLFBOOT_KEY_STORE_OFFSET, ENCRYPT_CACHE, WOLFBOOT_SECTOR_SIZE);
     hal_flash_lock();
     return ret;
 }
