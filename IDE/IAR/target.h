@@ -33,12 +33,14 @@
 
 #define WOLFBOOT_PARTITION_UPDATE_ADDRESS    0x700000
 
-#define WOLFBOOT_PARTITION_SWAP_ADDRESS      0x760000
+#define WOLFBOOT_PARTITION_SWAP_ADDRESS      0x6E0000
 
 #define PART_UPDATE_EXT
 #define PART_SWAP_EXT
 
-//#define DISABLE_BACKUP
+#define DISABLE_BACKUP
+
+#define DEBUG
 
 /* Load address in RAM for staged OS (update_ram only) */
 #define WOLFBOOT_DTS_BOOT_ADDRESS            

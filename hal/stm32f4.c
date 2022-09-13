@@ -177,7 +177,12 @@ static void RAMFUNCTION clear_errors(void)
 int RAMFUNCTION hal_flash_write(uint32_t _address, const uint8_t *data, int len)
 {
     int i;
-    uint32_t address = _address - ARCH_FLASH_OFFSET;
+    uint32_t address = 0;
+    if (_address>=ARCH_FLASH_OFFSET){
+      address=_address - ARCH_FLASH_OFFSET;
+    }else{
+    address=_address;
+    }
     flash_wait_complete();
     clear_errors();
     /* Set 8-bit write */
@@ -209,7 +214,14 @@ int RAMFUNCTION hal_flash_erase(uint32_t _address, int len)
     int start = -1, end = -1;
     uint32_t end_address;
     int i;
-    uint32_t address = _address - ARCH_FLASH_OFFSET;
+    
+    uint32_t address = 0;
+    if (_address>=ARCH_FLASH_OFFSET){
+      address=_address - ARCH_FLASH_OFFSET;
+    }else{
+    address=_address;
+    }
+    
     if (len == 0)
         return -1;
 

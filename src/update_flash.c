@@ -158,6 +158,7 @@ static int RAMFUNCTION wolfBoot_copy_sector(struct wolfBoot_image *src, struct w
 #define BUFFER_DECLARED
         static uint8_t buffer[FLASHBUFFER_SIZE];
 #endif
+        pos = 0;
         wb_flash_erase(dst, dst_sector_offset, WOLFBOOT_SECTOR_SIZE);
         while (pos < WOLFBOOT_SECTOR_SIZE)
         {
@@ -542,8 +543,8 @@ static int RAMFUNCTION wolfBoot_update(int fallback_allowed)
 void RAMFUNCTION wolfBoot_start(void)
 {
     uint8_t st;
-            uint32_t version_boot = 0;
-         uint32_t version_update = 0;
+        static    uint32_t version_boot = 0;
+        static uint32_t version_update = 0;
     struct wolfBoot_image boot;
 
 #ifdef RAM_CODE
