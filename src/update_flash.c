@@ -123,7 +123,7 @@ void wolfBoot_check_self_update(void)
 
 static int RAMFUNCTION wolfBoot_copy_sector(struct wolfBoot_image *src, struct wolfBoot_image *dst, uint32_t sector)
 {
-    uint32_t pos = 0;
+    static uint32_t pos = 0;
     uint32_t src_sector_offset = (sector * WOLFBOOT_SECTOR_SIZE);
     uint32_t dst_sector_offset = (sector * WOLFBOOT_SECTOR_SIZE);
 #ifdef EXT_ENCRYPTED
@@ -571,7 +571,8 @@ void RAMFUNCTION wolfBoot_start(void)
          
         if (version_update > version_boot)
         {
-            wolfBoot_update(0);
+            wolfBoot_update_trigger();
+            wolfBoot_update(1);
         }
     };
     if ((wolfBoot_open_image(&boot, PART_BOOT) < 0) || (wolfBoot_verify_integrity(&boot) < 0) || (wolfBoot_verify_authenticity(&boot) < 0))

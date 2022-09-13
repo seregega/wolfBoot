@@ -272,7 +272,7 @@ static void clock_pll_on(int powersave)
     hpre = RCC_PRESCALER_DIV_NONE; //AHB prescaler
     ppre1 = RCC_PRESCALER_DIV_4; //APB Low speed prescaler (APB1)
     ppre2 = RCC_PRESCALER_DIV_2; //APB high-speed prescaler (APB2)
-    flash_waitstates = 5;
+    flash_waitstates = 6;
 
     flash_set_waitstates(flash_waitstates);
 

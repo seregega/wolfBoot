@@ -38,6 +38,8 @@
 #define PART_UPDATE_EXT
 #define PART_SWAP_EXT
 
+//#define DISABLE_BACKUP
+
 /* Load address in RAM for staged OS (update_ram only) */
 #define WOLFBOOT_DTS_BOOT_ADDRESS            
 #define WOLFBOOT_DTS_UPDATE_ADDRESS          
