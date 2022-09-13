@@ -38,7 +38,7 @@
 #define PART_UPDATE_EXT
 #define PART_SWAP_EXT
 
-#define DISABLE_BACKUP
+//#define DISABLE_BACKUP
 
 #define DEBUG
 
