@@ -27,15 +27,18 @@
 #ifndef H_TARGETS_TARGET_
 #define H_TARGETS_TARGET_
 
-#define WOLFBOOT_SECTOR_SIZE                 0x20000
-#define WOLFBOOT_PARTITION_BOOT_ADDRESS      0x20000
-#define WOLFBOOT_PARTITION_SIZE              0x60000
+#define WOLFBOOT_SECTOR_SIZE 0x20000
+#define WOLFBOOT_PARTITION_BOOT_ADDRESS 0x20000
+#define WOLFBOOT_PARTITION_SIZE 0x60000
 
-#define WOLFBOOT_PARTITION_UPDATE_ADDRESS    0x700000
+#define WOLFBOOT_PARTITION_UPDATE_ADDRESS 0x700000
 
-#define WOLFBOOT_PARTITION_SWAP_ADDRESS      0x6E0000
-#define WOLFBOOT_KEY_STORE_OFFSET            0x08010000
-#define WOLFBOOT_KEY_STORE_SECTOR_SIZE       0x10000
+#define WOLFBOOT_PARTITION_SWAP_ADDRESS 0x6E0000
+
+#define WOLFBOOT_KEY_STORE_SECTOR 0x08010000                                                                              //сектор для хранения ключа
+#define WOLFBOOT_KEY_STORE_BLOCK 0xFF                                                                                     //размера блока данных под ключ
+#define WOLFBOOT_KEY_STORE_SECTOR_SIZE 0xFFFF                                                                             //размер сектора для хранения ключа
+#define WOLFBOOT_KEY_STORE_OFFSET (WOLFBOOT_KEY_STORE_SECTOR + WOLFBOOT_KEY_STORE_SECTOR_SIZE - WOLFBOOT_KEY_STORE_BLOCK) //смещение для хранения ключа
 
 #define PART_UPDATE_EXT
 #define PART_SWAP_EXT
@@ -48,10 +51,10 @@
 #define WOLFSSL_AES_COUNTER
 
 /* Load address in RAM for staged OS (update_ram only) */
-#define WOLFBOOT_DTS_BOOT_ADDRESS            
-#define WOLFBOOT_DTS_UPDATE_ADDRESS          
-#define WOLFBOOT_LOAD_ADDRESS                
-#define WOLFBOOT_LOAD_DTS_ADDRESS            
+#define WOLFBOOT_DTS_BOOT_ADDRESS
+#define WOLFBOOT_DTS_UPDATE_ADDRESS
+#define WOLFBOOT_LOAD_ADDRESS
+#define WOLFBOOT_LOAD_DTS_ADDRESS
 #define WOLFBOOT_FIXED_PARTITIONS
 
 #define EXT_FLASH

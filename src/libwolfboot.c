@@ -767,7 +767,7 @@ int wolfBoot_fallback_is_possible(void)
 #ifdef NVM_FLASH_WRITEONCE
 #define ENCRYPT_CACHE NVM_CACHE
 #else
-static uint8_t ENCRYPT_CACHE[256] __attribute__((aligned(32)));
+static uint8_t ENCRYPT_CACHE[WOLFBOOT_KEY_STORE_BLOCK] __attribute__((aligned(32)));
 #endif
 
 static int RAMFUNCTION hal_set_key(const uint8_t *k, const uint8_t *nonce)
@@ -781,7 +781,7 @@ static int RAMFUNCTION hal_set_key(const uint8_t *k, const uint8_t *nonce)
     hal_flash_unlock();
     /* casting to unsigned long to abide compilers on 64bit architectures */
     //XMEMCPY(ENCRYPT_CACHE,(void*)(unsigned long)addr_align, WOLFBOOT_SECTOR_SIZE);
-    ret = hal_flash_erase(WOLFBOOT_KEY_STORE_OFFSET, WOLFBOOT_KEY_STORE_SECTOR_SIZE);
+    ret = hal_flash_erase(WOLFBOOT_KEY_STORE_SECTOR, WOLFBOOT_KEY_STORE_SECTOR_SIZE);
     if (ret != 0)
         return ret;
     
@@ -790,7 +790,7 @@ static int RAMFUNCTION hal_set_key(const uint8_t *k, const uint8_t *nonce)
     
     XMEMCPY(ENCRYPT_CACHE, k, ENCRYPT_KEY_SIZE);
     XMEMCPY(ENCRYPT_CACHE + ENCRYPT_KEY_SIZE, nonce,ENCRYPT_NONCE_SIZE);
-    ret = hal_flash_write(WOLFBOOT_KEY_STORE_OFFSET, ENCRYPT_CACHE, WOLFBOOT_SECTOR_SIZE);
+    ret = hal_flash_write(WOLFBOOT_KEY_STORE_OFFSET, ENCRYPT_CACHE, WOLFBOOT_KEY_STORE_BLOCK);
     hal_flash_lock();
     return ret;
 }
