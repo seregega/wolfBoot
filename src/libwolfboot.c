@@ -804,8 +804,7 @@ int RAMFUNCTION wolfBoot_set_encrypt_key(const uint8_t *key,
 
 int RAMFUNCTION wolfBoot_get_encrypt_key(uint8_t *k, uint8_t *nonce)
 {
-    uint8_t *mem = (uint8_t *)(ENCRYPT_TMP_SECRET_OFFSET +
-        WOLFBOOT_PARTITION_BOOT_ADDRESS);
+    uint8_t *mem = (uint8_t *)(WOLFBOOT_KEY_STORE_OFFSET);
     XMEMCPY(k, mem, ENCRYPT_KEY_SIZE);
     XMEMCPY(nonce, mem + ENCRYPT_KEY_SIZE, ENCRYPT_NONCE_SIZE);
     return 0;
@@ -815,8 +814,7 @@ int RAMFUNCTION wolfBoot_erase_encrypt_key(void)
 {
     uint8_t ff[ENCRYPT_KEY_SIZE + ENCRYPT_NONCE_SIZE];
     int i;
-    uint8_t *mem = (uint8_t *)ENCRYPT_TMP_SECRET_OFFSET +
-        WOLFBOOT_PARTITION_BOOT_ADDRESS;
+    uint8_t *mem = (uint8_t *)WOLFBOOT_KEY_STORE_OFFSET;
     XMEMSET(ff, 0xFF, ENCRYPT_KEY_SIZE + ENCRYPT_NONCE_SIZE);
     if (XMEMCMP(mem, ff, ENCRYPT_KEY_SIZE + ENCRYPT_NONCE_SIZE) != 0)
         hal_set_key(ff, ff + ENCRYPT_KEY_SIZE);
@@ -834,8 +832,7 @@ ChaCha chacha;
 
 int chacha_init(void)
 {
-    uint8_t *key = (uint8_t *)(WOLFBOOT_PARTITION_BOOT_ADDRESS +
-        ENCRYPT_TMP_SECRET_OFFSET);
+    uint8_t *key = (uint8_t *)(WOLFBOOT_KEY_STORE_OFFSET);
     uint8_t ff[ENCRYPT_KEY_SIZE];
     uint8_t *stored_nonce = key + ENCRYPT_KEY_SIZE;
 
@@ -861,8 +858,7 @@ Aes aes_dec, aes_enc;
 
 int aes_init(void)
 {
-    uint8_t *key = (uint8_t *)(WOLFBOOT_PARTITION_BOOT_ADDRESS +
-        ENCRYPT_TMP_SECRET_OFFSET);
+    uint8_t *key = (uint8_t *)(WOLFBOOT_KEY_STORE_OFFSET);
     uint8_t ff[ENCRYPT_KEY_SIZE];
     uint8_t iv_buf[ENCRYPT_BLOCK_SIZE];
     uint8_t *stored_nonce = key + ENCRYPT_KEY_SIZE;

@@ -104,6 +104,8 @@
             <file>$PROJ_DIR$\Debug\Exe\wolfboot.bin</file>
             <file>$PROJ_DIR$\..\..\lib\wolfssl\wolfcrypt\src\aes.c</file>
             <file>$PROJ_DIR$\Debug\Obj\lib\wolfcrypt\aes.o</file>
+            <file>$PROJ_DIR$\..\..\lib\wolfssl\wolfcrypt\src\chacha.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\lib\wolfcrypt\chacha.o</file>
             <file>$PROJ_DIR$\wolfboot.icf</file>
             <file>$PROJ_DIR$\..\..\lib\wolfssl\wolfssl\wolfcrypt\aes.h</file>
             <file>$PROJ_DIR$\..\..\lib\wolfssl\wolfssl\wolfcrypt\pwdbased.h</file>
@@ -194,7 +196,7 @@
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 95 49 30 72 33 27 58 70 61 35 37 71 57 1 8 15 16 12 2 93 14 100 92 101 59 22 74 80 34</file>
+                    <file> 95 49 30 72 33 27 58 70 61 35 37 71 57 1 8 15 16 12 2 93 14 102 92 103 59 22 74 80 34</file>
                 </tool>
             </inputs>
         </file>
@@ -222,7 +224,7 @@
             <inputs>
                 <tool>
                     <name>ILINK</name>
-                    <file> 88 19 55 69 98 43 94 25 23 44 85 45 67 66 86 47 26 38 63 90 65 29 99</file>
+                    <file> 88 19 55 69 98 43 94 25 23 44 85 45 67 66 86 47 26 38 63 90 65 29 101</file>
                 </tool>
             </inputs>
         </file>
@@ -252,7 +254,7 @@
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 95 49 30 72 33 27 28 58 70 61 35 37 71 57 1 62 8 15 16 18 7 12 2 93 14 100 24 91 21 92 101 36 59 22 40 74 80 34 83</file>
+                    <file> 95 49 30 72 33 27 28 58 70 61 35 37 71 57 1 62 8 15 16 18 7 12 2 93 14 102 24 91 21 92 103 36 59 22 40 74 80 34 83</file>
                 </tool>
             </inputs>
         </file>
@@ -267,7 +269,7 @@
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 95 49 30 72 33 27 58 70 61 35 37 71 57 1 9 8 15 16 18 12 2 93 14 100 92 101 59 22 74 80 34</file>
+                    <file> 95 49 30 72 33 27 58 70 61 35 37 71 57 1 9 8 15 16 18 12 2 93 14 102 92 103 59 22 74 80 34</file>
                 </tool>
             </inputs>
         </file>
@@ -297,7 +299,7 @@
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 95 49 30 72 33 27 58 70 61 35 37 71 57 1 8 15 16 18 12 10 11 2 93 14 100 92 101 59 22 74 80 34</file>
+                    <file> 95 49 30 72 33 27 58 70 61 35 37 71 57 1 8 15 16 18 12 10 11 2 93 14 102 92 103 59 22 74 80 34</file>
                 </tool>
             </inputs>
         </file>
@@ -342,7 +344,7 @@
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 95 49 30 72 33 27 58 70 61 35 37 71 57 1 62 8 15 16 7 12 2 93 14 100 92 101 59 22 74 80 34</file>
+                    <file> 95 49 30 72 33 27 58 70 61 35 37 71 57 1 62 8 15 16 7 12 2 93 14 102 92 103 59 22 74 80 34</file>
                 </tool>
             </inputs>
         </file>
@@ -357,7 +359,7 @@
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 95 49 30 72 33 46 79 77 27 58 70 61 35 37 71 57 1 8 15 16 12 2 93 14 39 100 92 32 101 59 22 74 80 34</file>
+                    <file> 95 49 30 72 33 46 79 77 27 58 70 61 35 37 71 57 1 8 15 16 12 2 93 14 39 102 92 32 103 59 22 74 80 34</file>
                 </tool>
             </inputs>
         </file>
@@ -387,7 +389,7 @@
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 95 49 30 72 33 27 58 70 61 35 37 71 57 1 62 8 15 16 7 12 2 93 14 100 92 101 59 22 74 80 34</file>
+                    <file> 95 49 30 72 33 27 58 70 61 35 37 71 57 1 62 8 15 16 7 12 2 93 14 102 92 103 59 22 74 80 34</file>
                 </tool>
             </inputs>
         </file>
@@ -402,7 +404,7 @@
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 95 49 30 72 33 27 58 70 61 35 37 71 57 1 8 15 16 18 12 2 93 14 100 92 101 59 22 74 80 34</file>
+                    <file> 95 49 30 72 33 27 58 70 61 35 37 71 57 1 8 15 16 18 12 2 93 14 102 92 103 59 22 74 80 34</file>
                 </tool>
             </inputs>
         </file>
@@ -426,85 +428,28 @@
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 95 49 30 72 33 46 79 77 27 58 61 35 37 71 57 1 2 39 100 68 91 78 92 32 59 74 80 34</file>
+                    <file> 95 49 30 72 33 46 79 77 27 58 61 35 37 71 57 1 2 39 102 68 91 78 92 32 59 74 80 34</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\lib\wolfssl\wolfcrypt\src\chacha.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 100</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 1 2 59 80</file>
                 </tool>
             </inputs>
         </file>
         <forcedrebuild>
-            <name>$PROJ_DIR$\..\..\lib\wolfssl\wolfcrypt\src\sha256.c</name>
-            <tool>ICCARM</tool>
-        </forcedrebuild>
-        <forcedrebuild>
-            <name>$PROJ_DIR$\..\..\lib\wolfssl\wolfcrypt\src\ecc.c</name>
-            <tool>ICCARM</tool>
-        </forcedrebuild>
-        <forcedrebuild>
-            <name>$PROJ_DIR$\..\..\lib\wolfssl\wolfcrypt\src\hash.c</name>
-            <tool>ICCARM</tool>
-        </forcedrebuild>
-        <forcedrebuild>
-            <name>$PROJ_DIR$\..\..\lib\wolfssl\wolfcrypt\src\memory.c</name>
-            <tool>ICCARM</tool>
-        </forcedrebuild>
-        <forcedrebuild>
-            <name>$PROJ_DIR$\..\..\lib\wolfssl\wolfcrypt\src\sha.c</name>
-            <tool>ICCARM</tool>
-        </forcedrebuild>
-        <forcedrebuild>
-            <name>$PROJ_DIR$\..\..\hal\stm32f4.c</name>
-            <tool>ICCARM</tool>
-        </forcedrebuild>
-        <forcedrebuild>
-            <name>$PROJ_DIR$\..\..\lib\wolfssl\wolfcrypt\src\wc_port.c</name>
-            <tool>ICCARM</tool>
-        </forcedrebuild>
-        <forcedrebuild>
-            <name>$PROJ_DIR$\..\..\src\image.c</name>
-            <tool>ICCARM</tool>
-        </forcedrebuild>
-        <forcedrebuild>
-            <name>$PROJ_DIR$\..\..\src\update_flash.c</name>
-            <tool>ICCARM</tool>
-        </forcedrebuild>
-        <forcedrebuild>
-            <name>$PROJ_DIR$\..\..\lib\wolfssl\wolfcrypt\src\sp_cortexm.c</name>
-            <tool>ICCARM</tool>
-        </forcedrebuild>
-        <forcedrebuild>
-            <name>$PROJ_DIR$\..\..\src\loader.c</name>
-            <tool>ICCARM</tool>
-        </forcedrebuild>
-        <forcedrebuild>
-            <name>$PROJ_DIR$\..\..\src\keystore.c</name>
-            <tool>ICCARM</tool>
-        </forcedrebuild>
-        <forcedrebuild>
-            <name>$PROJ_DIR$\..\..\lib\wolfssl\wolfcrypt\src\sp_int.c</name>
-            <tool>ICCARM</tool>
-        </forcedrebuild>
-        <forcedrebuild>
-            <name>$PROJ_DIR$\..\..\hal\spi\spi_drv_stm32.c</name>
-            <tool>ICCARM</tool>
-        </forcedrebuild>
-        <forcedrebuild>
-            <name>$PROJ_DIR$\..\..\src\libwolfboot.c</name>
-            <tool>ICCARM</tool>
-        </forcedrebuild>
-        <forcedrebuild>
-            <name>$PROJ_DIR$\..\..\src\string.c</name>
-            <tool>ICCARM</tool>
-        </forcedrebuild>
-        <forcedrebuild>
-            <name>$PROJ_DIR$\..\..\src\spi_flash.c</name>
-            <tool>ICCARM</tool>
-        </forcedrebuild>
-        <forcedrebuild>
-            <name>$PROJ_DIR$\..\..\src\boot_arm.c</name>
-            <tool>ICCARM</tool>
-        </forcedrebuild>
-        <forcedrebuild>
-            <name>$PROJ_DIR$\..\..\lib\wolfssl\wolfcrypt\src\aes.c</name>
-            <tool>ICCARM</tool>
+            <name>[MULTI_TOOL]</name>
+            <tool>ILINK</tool>
         </forcedrebuild>
     </configuration>
     <configuration>

@@ -40,7 +40,7 @@ int main(int argc, char *argv[])
 #else
 
 char enc_key[] = "0123456789abcdef0123456789abcdef" /* ChaCha key (256 bit) */
-                 "0123456789ab";                    /* IV nonce    (96 bit) */
+                 "0123456789abcdef";                /* IV nonce    (96 bit) */
 
 
 int main(void)
