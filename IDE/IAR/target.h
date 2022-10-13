@@ -31,9 +31,9 @@
 #define WOLFBOOT_PARTITION_BOOT_ADDRESS 0x20000
 #define WOLFBOOT_PARTITION_SIZE 0x60000
 
-#define WOLFBOOT_PARTITION_UPDATE_ADDRESS 0x700000
+#define WOLFBOOT_PARTITION_UPDATE_ADDRESS 0x700000 //смещение для новой прошивки
 
-#define WOLFBOOT_PARTITION_SWAP_ADDRESS 0x6E0000
+#define WOLFBOOT_PARTITION_SWAP_ADDRESS 0x6E0000 //смещение для сектора теневого копироваия
 
 #define WOLFBOOT_KEY_STORE_SECTOR 0x08010000                                                                              //сектор для хранения ключа
 #define WOLFBOOT_KEY_STORE_BLOCK 0xFF                                                                                     //размера блока данных под ключ
