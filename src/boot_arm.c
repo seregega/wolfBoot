@@ -374,14 +374,14 @@ void RAMFUNCTION do_boot(const uint32_t *app_offset)
     /* Disable interrupts */
     asm volatile("cpsid i");
     /* Update IV */
-    VTOR = ((uint32_t)app_offset);
+    VTOR = ((uint32_t)(app_offset));
 #   endif
     /* Get stack pointer, entry point */
     app_end_stack = (*((uint32_t *)(app_offset)));
     app_entry = (void *)(*((uint32_t *)(app_offset + 1)));
 
     /* Update stack pointer */
-    asm volatile("msr msp, %0" ::"r"(app_end_stack));
+   asm volatile("msr msp, %0" ::"r"(app_end_stack));
 #   ifndef NO_VTOR
     asm volatile("cpsie i");
 #   endif

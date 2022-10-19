@@ -597,7 +597,8 @@ void RAMFUNCTION wolfBoot_start(void)
     }
     PART_SANITY_CHECK(&boot);
     hal_prepare_boot();
-    do_boot((void *)boot.fw_base);
+    //do_boot((void *)(0x08000000+boot.fw_base+0xF00)); //смещение 0х1000
+    do_boot((void *)(0x08000000+boot.fw_base+0x100)); //смещение 0х200
 }
 #ifdef WOLFBOOT_ARMORED
 #pragma GCC pop_options

@@ -43,6 +43,8 @@
 #define PART_UPDATE_EXT
 #define PART_SWAP_EXT
 
+//#define NO_VTOR
+
 //#define DISABLE_BACKUP
 
 #define DEBUG
