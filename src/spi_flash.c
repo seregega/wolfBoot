@@ -117,6 +117,8 @@ static int spi_flash_write_page(uint32_t address, const void *data, int len)
 {
     const uint8_t *buf = data;
     int j = 0;
+    if (len < 1)
+        return -1;
     while (len > 0) {
         wait_busy();
         flash_write_enable();
@@ -135,7 +137,7 @@ static int spi_flash_write_page(uint32_t address, const void *data, int len)
         spi_cs_off(SPI_CS_FLASH);
     }
     wait_busy();
-    return j;
+    return 0;
 }
 
 static int spi_flash_write_sb(uint32_t address, const void *data, int len)

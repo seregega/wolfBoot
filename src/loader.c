@@ -39,9 +39,7 @@ extern int main_argc;
 int main(int argc, char *argv[])
 #else
 
-//коды для расшифровки
-//char enc_key[] = "XG43mzxAMrXfD9QXuCuhmGkee95yb7Gh" /* ChaCha key (256 bit) */
-//                 "VyR5QfbPEkjuczdL";                /* IV nonce    (96 bit) */
+
 
 
 int main(void)
@@ -67,7 +65,10 @@ int main(void)
 #endif
     
 #ifdef EXT_ENCRYPTED
-        //wolfBoot_set_encrypt_key((uint8_t *)enc_key,(uint8_t *)(enc_key +  32));
+//коды для расшифровки
+//char enc_key[] = "XG43mzxAMrXfD9QXuCuhmGkee95yb7Gh" /* ChaCha key (256 bit) */
+//                 "VyR5QfbPEkjuczdL";                /* IV nonce    (96 bit) */
+//        wolfBoot_set_encrypt_key((uint8_t *)enc_key,(uint8_t *)(enc_key +  32));
 #endif
 
     wolfBoot_start();
