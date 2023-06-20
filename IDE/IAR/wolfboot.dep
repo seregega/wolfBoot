@@ -5,177 +5,179 @@
     <configuration>
         <name>Debug</name>
         <outputs>
-            <file>$TOOLKIT_DIR$\inc\c\aarch32\intrinsics.h</file>
             <file>$PROJ_DIR$\..\..\lib\wolfssl\wolfssl\wolfcrypt\settings.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\src\spi_flash.o</file>
-            <file>$PROJ_DIR$\..\..\lib\wolfssl\wolfssl\wolfcrypt\ecc.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\lib\wolfcrypt\chacha.o</file>
-            <file>$PROJ_DIR$\Debug\List\wolfboot.map</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_stdlib.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\aarch32\iccarm_builtin.h</file>
-            <file>$PROJ_DIR$\..\..\lib\wolfssl\wolfssl\wolfcrypt\dsa.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\src\string.o</file>
-            <file>$PROJ_DIR$\..\..\hal\spi\spi_drv_stm32.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\lib\wolfcrypt\sp_cortexm.o</file>
-            <file>$PROJ_DIR$\Debug\Obj\lib\wolfcrypt\wc_port.o</file>
-            <file>$PROJ_DIR$\..\..\lib\wolfssl\wolfssl\wolfcrypt\integer.h</file>
-            <file>$PROJ_DIR$\..\..\lib\wolfssl\wolfssl\wolfcrypt\sp_int.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
-            <file>$PROJ_DIR$\..\..\lib\wolfssl\wolfssl\wolfcrypt\aes.h</file>
-            <file>$PROJ_DIR$\..\..\lib\wolfssl\wolfssl\wolfcrypt\wolfmath.h</file>
-            <file>$PROJ_DIR$\..\..\lib\wolfssl\wolfssl\wolfcrypt\cpuid.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\string.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\src\spi_drv_stm32.o</file>
-            <file>$PROJ_DIR$\..\..\lib\wolfssl\wolfssl\wolfcrypt\types.h</file>
-            <file>$PROJ_DIR$\..\..\lib\wolfssl\wolfssl\wolfcrypt\random.h</file>
-            <file>$PROJ_DIR$\Debug\Exe\wolfboot.out</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
-            <file>$PROJ_DIR$\..\..\lib\wolfssl\wolfssl\wolfcrypt\memory.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\src\loader.o</file>
-            <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\lib\wolfcrypt\hash.o</file>
-            <file>$PROJ_DIR$\..\..\lib\wolfssl\wolfssl\wolfcrypt\hash.h</file>
-            <file>$PROJ_DIR$\..\..\lib\wolfssl\wolfssl\wolfcrypt\misc.h</file>
-            <file>$PROJ_DIR$\..\..\lib\wolfssl\wolfssl\wolfcrypt\asn.h</file>
             <file>$PROJ_DIR$\Debug\Obj\src\keystore.o</file>
-            <file>$PROJ_DIR$\..\..\src\loader.c</file>
-            <file>$PROJ_DIR$\..\..\src\string.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\lib\wolfcrypt\hash.o</file>
             <file>$PROJ_DIR$\..\..\lib\wolfssl\wolfcrypt\src\chacha.c</file>
             <file>$PROJ_DIR$\..\..\lib\wolfssl\wolfssl\wolfcrypt\hmac.h</file>
-            <file>$PROJ_DIR$\..\..\lib\wolfssl\wolfssl\wolfcrypt\error-crypt.h</file>
-            <file>$TOOLKIT_DIR$\lib\m7M_tl.a</file>
-            <file>$PROJ_DIR$\..\..\lib\wolfssl\wolfssl\wolfcrypt\sp.h</file>
-            <file>$PROJ_DIR$\..\..\src\update_flash.c</file>
-            <file>$PROJ_DIR$\Debug\Obj\lib\wolfcrypt\aes.o</file>
             <file>$TOOLKIT_DIR$\inc\c\stddef.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\lib\wolfcrypt\chacha.o</file>
             <file>$PROJ_DIR$\..\..\lib\wolfssl\wolfssl\wolfcrypt\asn_public.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\limits.h</file>
             <file>$PROJ_DIR$\..\..\lib\wolfssl\wolfssl\wolfcrypt\visibility.h</file>
-            <file>$PROJ_DIR$\..\..\hal\spi\spi_drv_stm32.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\src\loader.o</file>
+            <file>$PROJ_DIR$\..\..\lib\wolfssl\wolfssl\wolfcrypt\memory.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\lib\wolfcrypt\aes.o</file>
+            <file>$PROJ_DIR$\..\..\lib\wolfssl\wolfssl\wolfcrypt\wolfmath.h</file>
+            <file>$PROJ_DIR$\..\..\hal\spi\spi_drv_stm32.h</file>
+            <file>$PROJ_DIR$\..\..\lib\wolfssl\wolfssl\wolfcrypt\hash.h</file>
+            <file>$PROJ_DIR$\..\..\lib\wolfssl\wolfssl\wolfcrypt\sp_int.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\src\spi_drv_stm32.o</file>
+            <file>$PROJ_DIR$\..\..\lib\wolfssl\wolfssl\wolfcrypt\aes.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
+            <file>$PROJ_DIR$\..\..\lib\wolfssl\wolfssl\wolfcrypt\error-crypt.h</file>
+            <file>$PROJ_DIR$\..\..\lib\wolfssl\wolfssl\wolfcrypt\dsa.h</file>
+            <file>$PROJ_DIR$\..\..\lib\wolfssl\wolfssl\wolfcrypt\misc.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\lib\wolfcrypt\sp_cortexm.o</file>
+            <file>$PROJ_DIR$\..\..\lib\wolfssl\wolfssl\wolfcrypt\asn.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\src\spi_flash.o</file>
+            <file>$PROJ_DIR$\..\..\lib\wolfssl\wolfssl\wolfcrypt\random.h</file>
+            <file>$TOOLKIT_DIR$\lib\m7M_tl.a</file>
+            <file>$TOOLKIT_DIR$\inc\c\limits.h</file>
             <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
             <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
-            <file>$PROJ_DIR$\Debug\Obj\lib\wolfcrypt\memory.o</file>
-            <file>$PROJ_DIR$\..\..\src\libwolfboot.c</file>
-            <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
-            <file>$PROJ_DIR$\Debug\Obj\lib\wolfcrypt\sp_int.o</file>
-            <file>$PROJ_DIR$\Debug\Obj\lib\wolfcrypt\ecc.o</file>
-            <file>$PROJ_DIR$\..\..\src\spi_flash.c</file>
-            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
-            <file>$PROJ_DIR$\..\..\lib\wolfssl\wolfssl\wolfcrypt\cryptocb.h</file>
-            <file>$PROJ_DIR$\..\..\lib\wolfssl\wolfssl\wolfcrypt\wc_port.h</file>
+            <file>$PROJ_DIR$\..\..\lib\wolfssl\wolfssl\wolfcrypt\ecc.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_stdlib.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\string.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\src\string.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
+            <file>$PROJ_DIR$\..\..\lib\wolfssl\wolfssl\wolfcrypt\sp.h</file>
+            <file>$PROJ_DIR$\..\..\lib\wolfssl\wolfssl\wolfcrypt\cpuid.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\aarch32\iccarm_builtin.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\lib\wolfcrypt\wc_port.o</file>
+            <file>$PROJ_DIR$\..\..\lib\wolfssl\wolfssl\wolfcrypt\integer.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+            <file>$PROJ_DIR$\..\..\lib\wolfssl\wolfssl\wolfcrypt\types.h</file>
+            <file>$PROJ_DIR$\Debug\Exe\wolfboot.out</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+            <file>$PROJ_DIR$\Debug\List\wolfboot.map</file>
+            <file>$PROJ_DIR$\Debug\Obj\lib\wolfcrypt\sha.o</file>
             <file>$PROJ_DIR$\wolfboot.icf</file>
-            <file>$PROJ_DIR$\Debug\Obj\lib\wolfcrypt\sha256.o</file>
-            <file>$TOOLKIT_DIR$\inc\c\ctype.h</file>
-            <file>$PROJ_DIR$\..\..\include\wolfboot\version.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\src\image.o</file>
             <file>$TOOLKIT_DIR$\inc\c\aarch32\iar_intrinsics_common.h</file>
             <file>$PROJ_DIR$\Debug\Exe\wolfboot.bin</file>
-            <file>$PROJ_DIR$\Debug\Obj\src\update_flash.o</file>
-            <file>$PROJ_DIR$\..\..\lib\wolfssl\wolfssl\wolfcrypt\pwdbased.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\hal\stm32f4.o</file>
-            <file>$PROJ_DIR$\Debug\Obj\lib\wolfcrypt\sha.o</file>
-            <file>$PROJ_DIR$\..\..\lib\wolfssl\wolfssl\wolfcrypt\sha256.h</file>
-            <file>$PROJ_DIR$\..\..\lib\wolfssl\wolfssl\wolfcrypt\logging.h</file>
-            <file>$PROJ_DIR$\..\..\lib\wolfssl\wolfcrypt\src\misc.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\lib\wolfcrypt\memory.o</file>
+            <file>$PROJ_DIR$\..\..\lib\wolfssl\wolfssl\wolfcrypt\wc_port.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\src\image.o</file>
             <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\src\libwolfboot.o</file>
+            <file>$PROJ_DIR$\..\..\lib\wolfssl\wolfssl\wolfcrypt\pwdbased.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\lib\wolfcrypt\sp_int.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\lib\wolfcrypt\sha256.o</file>
             <file>$PROJ_DIR$\Debug\Obj\src\boot_arm.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\ctype.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\hal\stm32f4.o</file>
+            <file>$PROJ_DIR$\..\..\lib\wolfssl\wolfssl\wolfcrypt\logging.h</file>
+            <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
             <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+            <file>$PROJ_DIR$\..\..\include\wolfboot\version.h</file>
+            <file>$PROJ_DIR$\..\..\lib\wolfssl\wolfcrypt\src\misc.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\src\libwolfboot.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\lib\wolfcrypt\ecc.o</file>
+            <file>$PROJ_DIR$\..\..\lib\wolfssl\wolfssl\wolfcrypt\cryptocb.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\src\update_flash.o</file>
+            <file>$PROJ_DIR$\..\..\lib\wolfssl\wolfssl\wolfcrypt\sha256.h</file>
+            <file>$PROJ_DIR$\..\..\include\delta.h</file>
+            <file>$PROJ_DIR$\..\..\include\uart_drv.h</file>
+            <file>$PROJ_DIR$\..\..\include\uart_flash.h</file>
+            <file>$PROJ_DIR$\..\..\include\encrypt.h</file>
+            <file>$PROJ_DIR$\..\..\hal\stm32f4.c</file>
+            <file>$PROJ_DIR$\..\..\include\wolfboot\wolfboot.h</file>
+            <file>$PROJ_DIR$\..\..\include\hal.h</file>
+            <file>$PROJ_DIR$\..\..\include\image.h</file>
+            <file>$PROJ_DIR$\..\..\include\loader.h</file>
             <file>$PROJ_DIR$\..\..\include\spi_drv.h</file>
             <file>$PROJ_DIR$\..\..\include\spi_flash.h</file>
-            <file>$PROJ_DIR$\..\..\include\encrypt.h</file>
-            <file>$PROJ_DIR$\..\..\include\delta.h</file>
+            <file>$PROJ_DIR$\..\..\lib\wolfssl\wolfcrypt\src\ecc.c</file>
+            <file>$PROJ_DIR$\..\..\lib\wolfssl\wolfcrypt\src\hash.c</file>
+            <file>$PROJ_DIR$\..\..\lib\wolfssl\wolfcrypt\src\memory.c</file>
             <file>$PROJ_DIR$\..\..\lib\wolfssl\wolfcrypt\src\sha.c</file>
+            <file>$PROJ_DIR$\..\..\src\boot_arm.c</file>
+            <file>$PROJ_DIR$\..\..\src\loader.c</file>
+            <file>$PROJ_DIR$\..\..\hal\spi\spi_drv_stm32.c</file>
+            <file>$PROJ_DIR$\..\..\lib\wolfssl\wolfcrypt\src\sha256.c</file>
+            <file>$PROJ_DIR$\..\..\src\keystore.c</file>
+            <file>$PROJ_DIR$\..\..\src\string.c</file>
             <file>$PROJ_DIR$\..\..\lib\wolfssl\wolfcrypt\src\sp_cortexm.c</file>
             <file>$PROJ_DIR$\..\..\lib\wolfssl\wolfcrypt\src\wc_port.c</file>
-            <file>$PROJ_DIR$\..\..\src\keystore.c</file>
-            <file>$PROJ_DIR$\..\..\include\hal.h</file>
-            <file>$PROJ_DIR$\..\..\include\wolfboot\wolfboot.h</file>
-            <file>$PROJ_DIR$\..\..\include\loader.h</file>
-            <file>$PROJ_DIR$\..\..\hal\stm32f4.c</file>
-            <file>$PROJ_DIR$\..\..\lib\wolfssl\wolfcrypt\src\sha256.c</file>
-            <file>$PROJ_DIR$\..\..\lib\wolfssl\wolfcrypt\src\sp_int.c</file>
+            <file>$PROJ_DIR$\..\..\src\spi_flash.c</file>
+            <file>$PROJ_DIR$\..\..\src\update_flash.c</file>
             <file>$PROJ_DIR$\..\..\lib\wolfssl\wolfcrypt\src\aes.c</file>
-            <file>$PROJ_DIR$\..\..\include\image.h</file>
-            <file>$PROJ_DIR$\..\..\lib\wolfssl\wolfcrypt\src\ecc.c</file>
-            <file>$PROJ_DIR$\..\..\src\boot_arm.c</file>
-            <file>$PROJ_DIR$\..\..\src\image.c</file>
-            <file>$PROJ_DIR$\..\..\lib\wolfssl\wolfcrypt\src\hash.c</file>
-            <file>$PROJ_DIR$\..\..\include\printf.h</file>
-            <file>$PROJ_DIR$\..\..\include\uart_drv.h</file>
+            <file>$PROJ_DIR$\..\..\src\libwolfboot.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\aarch32\intrinsics.h</file>
             <file>$PROJ_DIR$\target.h</file>
             <file>$PROJ_DIR$\..\..\include\user_settings.h</file>
-            <file>$PROJ_DIR$\..\..\lib\wolfssl\wolfcrypt\src\memory.c</file>
-            <file>$PROJ_DIR$\..\..\include\uart_flash.h</file>
+            <file>$PROJ_DIR$\..\..\src\image.c</file>
+            <file>$PROJ_DIR$\..\..\lib\wolfssl\wolfcrypt\src\sp_int.c</file>
         </outputs>
         <file>
-            <name>$PROJ_DIR$\Debug\Exe\wolfboot.out</name>
+            <name>[ROOT_NODE]</name>
             <outputs>
                 <tool>
                     <name>ILINK</name>
-                    <file> 5</file>
-                </tool>
-                <tool>
-                    <name>OBJCOPY</name>
-                    <file> 66</file>
+                    <file> 45 43</file>
                 </tool>
             </outputs>
-            <inputs>
-                <tool>
-                    <name>ILINK</name>
-                    <file> 53 40 50 69 43 55 30 51 70 61 11 54 12 76 64 34 75 26 20 2 9 67 60</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\..\src\loader.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 26</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 49 24 77 6 29 62 44 28 27 19 15 74 57 100 80 86 93 88 79 99 103 101 63 87 16 25 68 1 71 21 47 59</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\..\src\string.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 9</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 49 24 77 29 44 19 15 74 57</file>
-                </tool>
-            </inputs>
         </file>
         <file>
             <name>$PROJ_DIR$\..\..\lib\wolfssl\wolfcrypt\src\chacha.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 4</file>
+                    <file> 6</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 100 101 1 47</file>
+                    <file> 99 100 0 8</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\..\src\update_flash.c</name>
+            <name>$PROJ_DIR$\Debug\Exe\wolfboot.out</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 45</file>
+                </tool>
+                <tool>
+                    <name>OBJCOPY</name>
+                    <file> 49</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 61 27 30 59 12 67 2 50 46 56 23 55 39 57 52 1 66 10 17 25 34 69 47</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Debug\Exe\wolfboot.bin</name>
+            <inputs>
+                <tool>
+                    <name>OBJCOPY</name>
+                    <file> 43</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\hal\stm32f4.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 59</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 29 9 62 32 35 58 5 44 19 33 41 53 63 99 74 77 78 81 100 64 76 18 11 54 0 70 42 8 51</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\lib\wolfssl\wolfcrypt\src\ecc.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
@@ -185,42 +187,12 @@
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 49 24 77 6 29 62 44 28 27 19 15 74 57 100 81 80 86 93 88 79 101 63 87 16 25 68 1 71 21 47 59</file>
+                    <file> 29 9 62 32 35 48 38 98 58 28 5 44 19 33 41 53 63 99 100 65 24 7 21 31 20 40 60 11 22 26 0 36 16 42 8 51 13</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\..\hal\spi\spi_drv_stm32.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 20</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 49 24 77 6 29 62 44 28 27 19 15 74 57 100 10 80 86 93 78 79 101 63 87 16 25 68 1 71 21 47 59</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\..\src\libwolfboot.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 75</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 49 24 77 6 29 65 7 0 62 44 28 27 19 15 74 57 100 80 86 93 79 101 63 87 73 16 25 32 68 1 71 21 47 59</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\..\src\spi_flash.c</name>
+            <name>$PROJ_DIR$\..\..\lib\wolfssl\wolfcrypt\src\hash.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
@@ -230,75 +202,117 @@
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 49 24 77 6 29 62 44 28 27 19 15 74 57 100 10 80 86 93 78 79 101 63 87 16 25 68 1 71 21 47 59</file>
+                    <file> 29 9 62 32 35 48 38 98 58 5 19 33 41 53 63 99 100 65 68 20 15 4 60 11 22 0 70 42 8 51</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\Debug\Exe\wolfboot.bin</name>
-            <inputs>
-                <tool>
-                    <name>OBJCOPY</name>
-                    <file> 23</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>[ROOT_NODE]</name>
+            <name>$PROJ_DIR$\..\..\lib\wolfssl\wolfcrypt\src\memory.c</name>
             <outputs>
                 <tool>
-                    <name>ILINK</name>
-                    <file> 23 5</file>
+                    <name>ICCARM</name>
+                    <file> 50</file>
                 </tool>
             </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 29 9 62 32 35 58 5 19 33 41 53 63 99 100 20 60 11 0 42 8 51</file>
+                </tool>
+            </inputs>
         </file>
         <file>
             <name>$PROJ_DIR$\..\..\lib\wolfssl\wolfcrypt\src\sha.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 70</file>
+                    <file> 46</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 100 101 1 47</file>
+                    <file> 99 100 0 8</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\..\lib\wolfssl\wolfcrypt\src\sp_cortexm.c</name>
+            <name>$PROJ_DIR$\..\..\src\boot_arm.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 11</file>
+                    <file> 57</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 49 24 77 6 29 65 7 0 62 46 44 28 27 19 15 74 57 100 101 73 18 3 39 13 25 32 22 1 41 14 21 47 59 17</file>
+                    <file> 29 9 62 32 35 58 5 44 19 33 41 53 63 99 74 77 78 79 81 100 64 76 18 11 54 0 70 42 8 51</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\..\lib\wolfssl\wolfcrypt\src\wc_port.c</name>
+            <name>$PROJ_DIR$\..\..\src\loader.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 12</file>
+                    <file> 10</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 49 24 77 6 29 62 46 44 27 19 15 74 57 100 101 3 39 13 72 25 22 1 14 21 47 59 17</file>
+                    <file> 29 9 62 32 35 58 5 44 19 33 41 53 63 99 74 77 78 79 81 72 73 100 64 76 18 11 54 0 70 42 8 51</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\hal\spi\spi_drv_stm32.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 17</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 29 9 62 32 35 58 5 44 19 33 41 53 63 99 14 74 77 78 80 81 100 64 76 18 11 54 0 70 42 8 51</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\lib\wolfssl\wolfcrypt\src\sha256.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 56</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 29 9 62 32 35 48 38 98 58 5 19 33 41 53 63 99 100 65 37 20 15 60 11 22 0 70 42 8 51</file>
                 </tool>
             </inputs>
         </file>
         <file>
             <name>$PROJ_DIR$\..\..\src\keystore.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 1</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 29 9 62 44 41 63 99 64 76</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\src\string.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
@@ -308,12 +322,57 @@
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 49 24 77 28 15 57 100 63 87</file>
+                    <file> 29 9 62 35 5 33 41 53 63</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\..\hal\stm32f4.c</name>
+            <name>$PROJ_DIR$\..\..\lib\wolfssl\wolfcrypt\src\sp_cortexm.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 23</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 29 9 62 32 35 48 38 98 58 28 5 44 19 33 41 53 63 99 100 65 37 31 20 40 11 22 26 0 36 16 42 8 51 13</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\lib\wolfssl\wolfcrypt\src\wc_port.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 39</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 29 9 62 32 35 58 28 5 19 33 41 53 63 99 100 31 20 40 60 11 26 0 16 42 8 51 13</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\src\spi_flash.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 25</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 29 9 62 32 35 58 5 44 19 33 41 53 63 99 14 74 77 78 80 81 100 64 76 18 11 54 0 70 42 8 51</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\src\update_flash.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
@@ -323,37 +382,7 @@
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 49 24 77 6 29 62 44 28 27 19 15 74 57 100 80 86 93 79 101 63 87 16 25 68 1 71 21 47 59</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\..\lib\wolfssl\wolfcrypt\src\sha256.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 61</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 49 24 77 6 29 65 7 0 62 44 27 19 15 74 57 100 101 73 18 39 31 72 25 32 1 71 21 47 59</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\..\lib\wolfssl\wolfcrypt\src\sp_int.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 54</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 49 24 77 6 29 65 7 0 62 46 44 27 19 15 74 57 100 101 73 39 25 32 22 1 14 21 47 59 17</file>
+                    <file> 29 9 62 32 35 58 5 44 19 33 41 53 63 99 71 74 77 78 79 81 100 64 76 18 11 54 0 70 42 8 51</file>
                 </tool>
             </inputs>
         </file>
@@ -362,18 +391,48 @@
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 43</file>
+                    <file> 12</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 49 24 77 6 29 65 7 0 62 44 27 19 15 74 57 100 101 73 16 18 39 72 25 32 1 21 47 59</file>
+                    <file> 29 9 62 32 35 48 38 98 58 5 19 33 41 53 63 99 100 65 18 37 20 60 11 22 0 42 8 51</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\..\lib\wolfssl\wolfcrypt\src\ecc.c</name>
+            <name>$PROJ_DIR$\..\..\src\libwolfboot.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 66</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 29 9 62 32 35 48 38 98 58 5 44 19 33 41 53 63 99 74 77 78 81 100 64 76 65 18 11 22 54 0 70 42 8 51</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\src\image.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 52</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 29 9 62 32 35 58 28 5 44 19 33 41 53 63 99 14 74 77 78 79 80 81 100 64 76 18 31 20 40 11 54 26 0 70 16 42 8 51 13</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\lib\wolfssl\wolfcrypt\src\sp_int.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
@@ -383,67 +442,7 @@
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 49 24 77 6 29 65 7 0 62 46 44 28 27 19 15 74 57 100 101 73 33 45 8 3 39 13 72 25 32 22 1 41 14 21 47 59 17</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\..\src\boot_arm.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 76</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 49 24 77 6 29 62 44 28 27 19 15 74 57 100 80 86 93 88 79 101 63 87 16 25 68 1 71 21 47 59</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\..\src\image.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 64</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 49 24 77 6 29 62 46 44 28 27 19 15 74 57 100 10 80 86 93 88 78 79 101 63 87 16 3 39 13 25 68 22 1 71 14 21 47 59 17</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\..\lib\wolfssl\wolfcrypt\src\hash.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 30</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 49 24 77 6 29 65 7 0 62 44 27 19 15 74 57 100 101 73 58 39 31 38 72 25 32 1 71 21 47 59</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\..\lib\wolfssl\wolfcrypt\src\memory.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 51</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 49 24 77 6 29 62 44 27 19 15 74 57 100 101 39 72 25 1 21 47 59</file>
+                    <file> 29 9 62 32 35 48 38 98 58 28 5 19 33 41 53 63 99 100 65 20 11 22 26 0 16 42 8 51 13</file>
                 </tool>
             </inputs>
         </file>
@@ -455,82 +454,40 @@
     <configuration>
         <name>Release</name>
         <outputs>
-            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\string.h</file>
-            <file>$PROJ_DIR$\Release\Obj\src\string.o</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
-            <file>$PROJ_DIR$\Release\Exe\wolfboot.out</file>
-            <file>$PROJ_DIR$\..\..\src\string.c</file>
-            <file>$PROJ_DIR$\..\..\src\update_flash.c</file>
             <file>$TOOLKIT_DIR$\inc\c\stddef.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
             <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
-            <file>$PROJ_DIR$\..\..\src\libwolfboot.c</file>
-            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\string.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
             <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+            <file>$PROJ_DIR$\Release\Obj\src\string.o</file>
+            <file>$PROJ_DIR$\Release\Exe\wolfboot.out</file>
             <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
-            <file>$PROJ_DIR$\..\..\src\keystore.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
             <file>$PROJ_DIR$\..\..\hal\stm32f4.c</file>
             <file>$PROJ_DIR$\..\..\src\boot_arm.c</file>
+            <file>$PROJ_DIR$\..\..\src\keystore.c</file>
+            <file>$PROJ_DIR$\..\..\src\string.c</file>
+            <file>$PROJ_DIR$\..\..\src\update_flash.c</file>
+            <file>$PROJ_DIR$\..\..\src\libwolfboot.c</file>
         </outputs>
-        <file>
-            <name>$PROJ_DIR$\..\..\src\string.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 2</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 10 3 14 5 9 1 0 13 12</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\..\src\update_flash.c</name>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 10 3 14 5 1 0 13 12</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\..\src\libwolfboot.c</name>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 10 3 14 4 0 12</file>
-                </tool>
-            </inputs>
-        </file>
         <file>
             <name>[ROOT_NODE]</name>
             <outputs>
                 <tool>
                     <name>ILINK</name>
-                    <file> 6</file>
+                    <file> 9</file>
                 </tool>
             </outputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\..\src\keystore.c</name>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 10 3 14 4 0 12</file>
-                </tool>
-            </inputs>
         </file>
         <file>
             <name>$PROJ_DIR$\..\..\hal\stm32f4.c</name>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 10 3 14 4 0 12</file>
+                    <file> 2 1 10 6 5 11</file>
                 </tool>
             </inputs>
         </file>
@@ -539,7 +496,49 @@
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 10 3 14 4 0 12</file>
+                    <file> 2 1 10 6 5 11</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\src\keystore.c</name>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 2 1 10 6 5 11</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\src\string.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 8</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 2 1 10 4 0 3 5 7 11</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\src\update_flash.c</name>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 2 1 10 4 3 5 7 11</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\src\libwolfboot.c</name>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 2 1 10 6 5 11</file>
                 </tool>
             </inputs>
         </file>
